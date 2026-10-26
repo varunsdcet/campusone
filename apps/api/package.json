@@ -1,0 +1,33 @@
+{
+  "name": "@myheritage/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch --env-file-if-exists=../../.env src/main.ts",
+    "build": "tsc -p tsconfig.json && mkdir -p dist/modules/admin && cp src/modules/admin/sis-seed.json dist/modules/admin/sis-seed.json && cp src/modules/admin/heritage-master.json dist/modules/admin/heritage-master.json",
+    "start": "node dist/main.js",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "openapi:check": "tsx src/openapi-check.ts",
+    "proof": "tsx src/proof-slice.ts"
+  },
+  "dependencies": {
+    "@myheritage/ai": "workspace:*",
+    "@myheritage/auth": "workspace:*",
+    "@myheritage/contracts": "workspace:*",
+    "@myheritage/db": "workspace:*",
+    "@myheritage/events": "workspace:*",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9"
+  }
+}

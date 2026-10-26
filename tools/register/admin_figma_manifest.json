@@ -1,0 +1,824 @@
+[
+  {
+    "id": "134:9",
+    "name": "ad-09-loa-builder",
+    "path": "/admin/f/ad-09-loa-builder",
+    "file": "134-9.png"
+  },
+  {
+    "id": "17:1049",
+    "name": "rg-01-student-360",
+    "path": "/admin/f/rg-01-student-360",
+    "file": "17-1049.png"
+  },
+  {
+    "id": "134:181",
+    "name": "ad-10-conversion-dashboard",
+    "path": "/admin/f/ad-10-conversion-dashboard",
+    "file": "134-181.png"
+  },
+  {
+    "id": "17:1248",
+    "name": "ad-02-application-queue",
+    "path": "/admin/f/ad-02-application-queue",
+    "file": "17-1248.png"
+  },
+  {
+    "id": "134:385",
+    "name": "pl-03-security-policy",
+    "path": "/admin/f/pl-03-security-policy",
+    "file": "134-385.png"
+  },
+  {
+    "id": "17:1493",
+    "name": "ad-03-application-detail",
+    "path": "/admin/f/ad-03-application-detail",
+    "file": "17-1493.png"
+  },
+  {
+    "id": "17:2790",
+    "name": "lb-08-lab-session",
+    "path": "/admin/f/lb-08-lab-session",
+    "file": "17-2790.png"
+  },
+  {
+    "id": "17:2903",
+    "name": "wf-02-workflow-designer",
+    "path": "/admin/f/wf-02-workflow-designer",
+    "file": "17-2903.png"
+  },
+  {
+    "id": "17:8529",
+    "name": "crm-01-dashboard",
+    "path": "/admin/f/crm-01-dashboard",
+    "file": "17-8529.png"
+  },
+  {
+    "id": "17:8674",
+    "name": "crm-02-leads",
+    "path": "/admin/f/crm-02-leads",
+    "file": "17-8674.png"
+  },
+  {
+    "id": "17:8811",
+    "name": "crm-03-lead-360",
+    "path": "/admin/f/crm-03-lead-360",
+    "file": "17-8811.png"
+  },
+  {
+    "id": "17:8957",
+    "name": "crm-04-campaigns",
+    "path": "/admin/f/crm-04-campaigns",
+    "file": "17-8957.png"
+  },
+  {
+    "id": "17:9050",
+    "name": "crm-05-campaign-detail",
+    "path": "/admin/f/crm-05-campaign-detail",
+    "file": "17-9050.png"
+  },
+  {
+    "id": "17:9149",
+    "name": "crm-06-events",
+    "path": "/admin/f/crm-06-events",
+    "file": "17-9149.png"
+  },
+  {
+    "id": "17:9244",
+    "name": "crm-07-counsellor-queue",
+    "path": "/admin/f/crm-07-counsellor-queue",
+    "file": "17-9244.png"
+  },
+  {
+    "id": "17:9338",
+    "name": "crm-08-funnel-analytics",
+    "path": "/admin/f/crm-08-funnel-analytics",
+    "file": "17-9338.png"
+  },
+  {
+    "id": "17:9979",
+    "name": "SS-01 Success Dashboard",
+    "path": "/admin/f/ss-01-success-dashboard",
+    "file": "17-9979.png"
+  },
+  {
+    "id": "17:10106",
+    "name": "SS-02 Alert Queue",
+    "path": "/admin/f/ss-02-alert-queue",
+    "file": "17-10106.png"
+  },
+  {
+    "id": "17:10211",
+    "name": "SS-03 Student Success 360",
+    "path": "/admin/f/ss-03-student-success-360",
+    "file": "17-10211.png"
+  },
+  {
+    "id": "17:10294",
+    "name": "SS-04 Case",
+    "path": "/admin/f/ss-04-case",
+    "file": "17-10294.png"
+  },
+  {
+    "id": "17:10379",
+    "name": "SS-05 Action Plan",
+    "path": "/admin/f/ss-05-action-plan",
+    "file": "17-10379.png"
+  },
+  {
+    "id": "17:10486",
+    "name": "SS-06 Appointments",
+    "path": "/admin/f/ss-06-appointments",
+    "file": "17-10486.png"
+  },
+  {
+    "id": "17:10585",
+    "name": "SS-07 Intervention Analytics",
+    "path": "/admin/f/ss-07-intervention-analytics",
+    "file": "17-10585.png"
+  },
+  {
+    "id": "17:10692",
+    "name": "FN-01 Finance Dashboard",
+    "path": "/admin/f/fn-01-finance-dashboard",
+    "file": "17-10692.png"
+  },
+  {
+    "id": "17:10809",
+    "name": "FN-03 Charges",
+    "path": "/admin/f/fn-03-charges",
+    "file": "17-10809.png"
+  },
+  {
+    "id": "17:10906",
+    "name": "FN-04 Payments",
+    "path": "/admin/f/fn-04-payments",
+    "file": "17-10906.png"
+  },
+  {
+    "id": "17:11000",
+    "name": "FN-05 Reconciliation",
+    "path": "/admin/f/fn-05-reconciliation",
+    "file": "17-11000.png"
+  },
+  {
+    "id": "17:11088",
+    "name": "FN-06 Refund Queue",
+    "path": "/admin/f/fn-06-refund-queue",
+    "file": "17-11088.png"
+  },
+  {
+    "id": "17:11179",
+    "name": "FN-07 Holds",
+    "path": "/admin/f/fn-07-holds",
+    "file": "17-11179.png"
+  },
+  {
+    "id": "17:11366",
+    "name": "LB-01-Lab-Dashboard",
+    "path": "/admin/f/lb-01-lab-dashboard",
+    "file": "17-11366.png"
+  },
+  {
+    "id": "17:11504",
+    "name": "LB-03-Lab-Equipment-List",
+    "path": "/admin/f/lb-03-lab-equipment-list",
+    "file": "17-11504.png"
+  },
+  {
+    "id": "17:11624",
+    "name": "LB-09-Lab-Notebook",
+    "path": "/admin/f/lb-09-lab-notebook",
+    "file": "17-11624.png"
+  },
+  {
+    "id": "17:11726",
+    "name": "PR-01-Practicum-Dashboard",
+    "path": "/admin/f/pr-01-practicum-dashboard",
+    "file": "17-11726.png"
+  },
+  {
+    "id": "17:11883",
+    "name": "PR-02-Employers-Registry",
+    "path": "/admin/f/pr-02-employers-registry",
+    "file": "17-11883.png"
+  },
+  {
+    "id": "17:12002",
+    "name": "PR-05-Placements-Workspace",
+    "path": "/admin/f/pr-05-placements-workspace",
+    "file": "17-12002.png"
+  },
+  {
+    "id": "17:12751",
+    "name": "WF-01-Workflow-List",
+    "path": "/admin/f/wf-01-workflow-list",
+    "file": "17-12751.png"
+  },
+  {
+    "id": "17:12828",
+    "name": "WF-03-Workflow-Test",
+    "path": "/admin/f/wf-03-workflow-test",
+    "file": "17-12828.png"
+  },
+  {
+    "id": "17:12879",
+    "name": "WF-04-Workflow-Runs",
+    "path": "/admin/f/wf-04-workflow-runs",
+    "file": "17-12879.png"
+  },
+  {
+    "id": "17:12957",
+    "name": "RL-01-Rule-Sets",
+    "path": "/admin/f/rl-01-rule-sets",
+    "file": "17-12957.png"
+  },
+  {
+    "id": "17:13019",
+    "name": "RL-02-Rule-Designer",
+    "path": "/admin/f/rl-02-rule-designer",
+    "file": "17-13019.png"
+  },
+  {
+    "id": "17:13085",
+    "name": "RL-03-Rule-Simulator",
+    "path": "/admin/f/rl-03-rule-simulator",
+    "file": "17-13085.png"
+  },
+  {
+    "id": "17:13147",
+    "name": "FM-01-Form-List",
+    "path": "/admin/f/fm-01-form-list",
+    "file": "17-13147.png"
+  },
+  {
+    "id": "17:13209",
+    "name": "FM-02-Form-Designer",
+    "path": "/admin/f/fm-02-form-designer",
+    "file": "17-13209.png"
+  },
+  {
+    "id": "17:13281",
+    "name": "FM-03-Form-Version",
+    "path": "/admin/f/fm-03-form-version",
+    "file": "17-13281.png"
+  },
+  {
+    "id": "17:13330",
+    "name": "FM-04-Form-Submissions",
+    "path": "/admin/f/fm-04-form-submissions",
+    "file": "17-13330.png"
+  },
+  {
+    "id": "17:14019",
+    "name": "ad-01-admissions-dashboard",
+    "path": "/admin/f/ad-01-admissions-dashboard",
+    "file": "17-14019.png"
+  },
+  {
+    "id": "17:14157",
+    "name": "ad-04-requirement-review",
+    "path": "/admin/f/ad-04-requirement-review",
+    "file": "17-14157.png"
+  },
+  {
+    "id": "17:14303",
+    "name": "ad-05-document-review",
+    "path": "/admin/f/ad-05-document-review",
+    "file": "17-14303.png"
+  },
+  {
+    "id": "17:14401",
+    "name": "ad-06-interview-workspace",
+    "path": "/admin/f/ad-06-interview-workspace",
+    "file": "17-14401.png"
+  },
+  {
+    "id": "17:14539",
+    "name": "ad-07-decision-workspace",
+    "path": "/admin/f/ad-07-decision-workspace",
+    "file": "17-14539.png"
+  },
+  {
+    "id": "17:14625",
+    "name": "ad-08-offer-builder",
+    "path": "/admin/f/ad-08-offer-builder",
+    "file": "17-14625.png"
+  },
+  {
+    "id": "17:14802",
+    "name": "ad-10-conversion",
+    "path": "/admin/f/ad-10-conversion",
+    "file": "17-14802.png"
+  },
+  {
+    "id": "17:14890",
+    "name": "ad-11-intake-capacity",
+    "path": "/admin/f/ad-11-intake-capacity",
+    "file": "17-14890.png"
+  },
+  {
+    "id": "17:15028",
+    "name": "rg-02-academic-history",
+    "path": "/admin/f/rg-02-academic-history",
+    "file": "17-15028.png"
+  },
+  {
+    "id": "17:15181",
+    "name": "rg-03-status-history",
+    "path": "/admin/f/rg-03-status-history",
+    "file": "17-15181.png"
+  },
+  {
+    "id": "17:15305",
+    "name": "rg-04-transfer-credits",
+    "path": "/admin/f/rg-04-transfer-credits",
+    "file": "17-15305.png"
+  },
+  {
+    "id": "17:15432",
+    "name": "rg-05-academic-standing",
+    "path": "/admin/f/rg-05-academic-standing",
+    "file": "17-15432.png"
+  },
+  {
+    "id": "17:15554",
+    "name": "rg-06-completion-audit",
+    "path": "/admin/f/rg-06-completion-audit",
+    "file": "17-15554.png"
+  },
+  {
+    "id": "17:15688",
+    "name": "rg-07-transcript",
+    "path": "/admin/f/rg-07-transcript",
+    "file": "17-15688.png"
+  },
+  {
+    "id": "17:15786",
+    "name": "rg-08-registrar-correction",
+    "path": "/admin/f/rg-08-registrar-correction",
+    "file": "17-15786.png"
+  },
+  {
+    "id": "17:15865",
+    "name": "rg-09-official-export",
+    "path": "/admin/f/rg-09-official-export",
+    "file": "17-15865.png"
+  },
+  {
+    "id": "17:16000",
+    "name": "cp-02-record-completeness",
+    "path": "/admin/f/cp-02-record-completeness",
+    "file": "17-16000.png"
+  },
+  {
+    "id": "17:16137",
+    "name": "cp-03-record-vault",
+    "path": "/admin/f/cp-03-record-vault",
+    "file": "17-16137.png"
+  },
+  {
+    "id": "17:16235",
+    "name": "cp-04-retention-policies",
+    "path": "/admin/f/cp-04-retention-policies",
+    "file": "17-16235.png"
+  },
+  {
+    "id": "17:16334",
+    "name": "cp-05-legal-holds",
+    "path": "/admin/f/cp-05-legal-holds",
+    "file": "17-16334.png"
+  },
+  {
+    "id": "17:16423",
+    "name": "cp-06-evidence-mapping",
+    "path": "/admin/f/cp-06-evidence-mapping",
+    "file": "17-16423.png"
+  },
+  {
+    "id": "17:16529",
+    "name": "cp-07-accreditation-assistant",
+    "path": "/admin/f/cp-07-accreditation-assistant",
+    "file": "17-16529.png"
+  },
+  {
+    "id": "17:16639",
+    "name": "cp-09-disposal-review",
+    "path": "/admin/f/cp-09-disposal-review",
+    "file": "17-16639.png"
+  },
+  {
+    "id": "17:16728",
+    "name": "cp-10-privacy-requests",
+    "path": "/admin/f/cp-10-privacy-requests",
+    "file": "17-16728.png"
+  },
+  {
+    "id": "17:17016",
+    "name": "ai-01-ai-dashboard",
+    "path": "/admin/f/ai-01-ai-dashboard",
+    "file": "17-17016.png"
+  },
+  {
+    "id": "17:17225",
+    "name": "ai-02-model-registry",
+    "path": "/admin/f/ai-02-model-registry",
+    "file": "17-17225.png"
+  },
+  {
+    "id": "17:17388",
+    "name": "ai-03-prompt-registry",
+    "path": "/admin/f/ai-03-prompt-registry",
+    "file": "17-17388.png"
+  },
+  {
+    "id": "17:17552",
+    "name": "ai-04-tool-registry",
+    "path": "/admin/f/ai-04-tool-registry",
+    "file": "17-17552.png"
+  },
+  {
+    "id": "17:17707",
+    "name": "ai-05-knowledge-sources",
+    "path": "/admin/f/ai-05-knowledge-sources",
+    "file": "17-17707.png"
+  },
+  {
+    "id": "17:17852",
+    "name": "ai-06-ingestion-jobs",
+    "path": "/admin/f/ai-06-ingestion-jobs",
+    "file": "17-17852.png"
+  },
+  {
+    "id": "17:18180",
+    "name": "ai-07-retrieval-inspector",
+    "path": "/admin/f/ai-07-retrieval-inspector",
+    "file": "17-18180.png"
+  },
+  {
+    "id": "17:18303",
+    "name": "ai-08-evaluation-dashboard",
+    "path": "/admin/f/ai-08-evaluation-dashboard",
+    "file": "17-18303.png"
+  },
+  {
+    "id": "17:18428",
+    "name": "ai-09-citation-failures",
+    "path": "/admin/f/ai-09-citation-failures",
+    "file": "17-18428.png"
+  },
+  {
+    "id": "17:18538",
+    "name": "ai-10-usage-cost",
+    "path": "/admin/f/ai-10-usage-cost",
+    "file": "17-18538.png"
+  },
+  {
+    "id": "17:18639",
+    "name": "ai-11-ai-policy",
+    "path": "/admin/f/ai-11-ai-policy",
+    "file": "17-18639.png"
+  },
+  {
+    "id": "17:18712",
+    "name": "ai-12-tool-call-audit",
+    "path": "/admin/f/ai-12-tool-call-audit",
+    "file": "17-18712.png"
+  },
+  {
+    "id": "17:20634",
+    "name": "fn-08-finance-export",
+    "path": "/admin/f/fn-08-finance-export",
+    "file": "17-20634.png"
+  },
+  {
+    "id": "27:118",
+    "name": "sh-01-login (Admin)",
+    "path": "/admin/f/sh-01-login-admin",
+    "file": "27-118.png"
+  },
+  {
+    "id": "65:1833",
+    "name": "lb-02-lab-rooms",
+    "path": "/admin/f/lb-02-lab-rooms",
+    "file": "65-1833.png"
+  },
+  {
+    "id": "65:2077",
+    "name": "lb-04-equipment-detail",
+    "path": "/admin/f/lb-04-equipment-detail",
+    "file": "65-2077.png"
+  },
+  {
+    "id": "65:2226",
+    "name": "lb-05-inventory",
+    "path": "/admin/f/lb-05-inventory",
+    "file": "65-2226.png"
+  },
+  {
+    "id": "65:2389",
+    "name": "lb-06-safety-rules",
+    "path": "/admin/f/lb-06-safety-rules",
+    "file": "65-2389.png"
+  },
+  {
+    "id": "65:2673",
+    "name": "lb-07-student-eligibility",
+    "path": "/admin/f/lb-07-student-eligibility",
+    "file": "65-2673.png"
+  },
+  {
+    "id": "65:2852",
+    "name": "lb-10-incident",
+    "path": "/admin/f/lb-10-incident",
+    "file": "65-2852.png"
+  },
+  {
+    "id": "65:2986",
+    "name": "lb-11-virtual-labs",
+    "path": "/admin/f/lb-11-virtual-labs",
+    "file": "65-2986.png"
+  },
+  {
+    "id": "65:3146",
+    "name": "lb-12-computer-environments",
+    "path": "/admin/f/lb-12-computer-environments",
+    "file": "65-3146.png"
+  },
+  {
+    "id": "65:3354",
+    "name": "pr-03-sites",
+    "path": "/admin/f/pr-03-sites",
+    "file": "65-3354.png"
+  },
+  {
+    "id": "65:3508",
+    "name": "pr-04-opportunities",
+    "path": "/admin/f/pr-04-opportunities",
+    "file": "65-3508.png"
+  },
+  {
+    "id": "65:3725",
+    "name": "pr-06-agreements",
+    "path": "/admin/f/pr-06-agreements",
+    "file": "65-3725.png"
+  },
+  {
+    "id": "65:3846",
+    "name": "pr-07-logs",
+    "path": "/admin/f/pr-07-logs",
+    "file": "65-3846.png"
+  },
+  {
+    "id": "65:4101",
+    "name": "pr-08-evaluations",
+    "path": "/admin/f/pr-08-evaluations",
+    "file": "65-4101.png"
+  },
+  {
+    "id": "65:4279",
+    "name": "pr-09-incidents",
+    "path": "/admin/f/pr-09-incidents",
+    "file": "65-4279.png"
+  },
+  {
+    "id": "65:4416",
+    "name": "pr-10-employer-portal",
+    "path": "/admin/f/pr-10-employer-portal",
+    "file": "65-4416.png"
+  },
+  {
+    "id": "65:4530",
+    "name": "fn-02-student-account",
+    "path": "/admin/f/fn-02-student-account",
+    "file": "65-4530.png"
+  },
+  {
+    "id": "65:4632",
+    "name": "cp-01-compliance-dashboard",
+    "path": "/admin/f/cp-01-compliance-dashboard",
+    "file": "65-4632.png"
+  },
+  {
+    "id": "65:4898",
+    "name": "cp-08-inspection-pack",
+    "path": "/admin/f/cp-08-inspection-pack",
+    "file": "65-4898.png"
+  },
+  {
+    "id": "66:1146",
+    "name": "pl-01-users-and-roles",
+    "path": "/admin/f/pl-01-users-and-roles",
+    "file": "66-1146.png"
+  },
+  {
+    "id": "66:1314",
+    "name": "pl-02-permission-matrix",
+    "path": "/admin/f/pl-02-permission-matrix",
+    "file": "66-1314.png"
+  },
+  {
+    "id": "66:1608",
+    "name": "pl-04-session-login-audit",
+    "path": "/admin/f/pl-04-session-login-audit",
+    "file": "66-1608.png"
+  },
+  {
+    "id": "66:1977",
+    "name": "pl-05-integrations",
+    "path": "/admin/f/pl-05-integrations",
+    "file": "66-1977.png"
+  },
+  {
+    "id": "66:2137",
+    "name": "pl-06-operations",
+    "path": "/admin/f/pl-06-operations",
+    "file": "66-2137.png"
+  },
+  {
+    "id": "66:2284",
+    "name": "pl-07-institution-settings",
+    "path": "/admin/f/pl-07-institution-settings",
+    "file": "66-2284.png"
+  },
+  {
+    "id": "66:2385",
+    "name": "pl-08-notification-templates",
+    "path": "/admin/f/pl-08-notification-templates",
+    "file": "66-2385.png"
+  },
+  {
+    "id": "66:2707",
+    "name": "ac-01-academic-terms",
+    "path": "/admin/f/ac-01-academic-terms",
+    "file": "66-2707.png"
+  },
+  {
+    "id": "66:2852",
+    "name": "ac-02-academic-calendar",
+    "path": "/admin/f/ac-02-academic-calendar",
+    "file": "66-2852.png"
+  },
+  {
+    "id": "66:3042",
+    "name": "ac-03-programs",
+    "path": "/admin/f/ac-03-programs",
+    "file": "66-3042.png"
+  },
+  {
+    "id": "66:3189",
+    "name": "ac-04-program-detail",
+    "path": "/admin/f/ac-04-program-detail",
+    "file": "66-3189.png"
+  },
+  {
+    "id": "66:3307",
+    "name": "ac-05-program-change-request",
+    "path": "/admin/f/ac-05-program-change-request",
+    "file": "66-3307.png"
+  },
+  {
+    "id": "66:3469",
+    "name": "ac-06-course-catalogue",
+    "path": "/admin/f/ac-06-course-catalogue",
+    "file": "66-3469.png"
+  },
+  {
+    "id": "66:3610",
+    "name": "ac-07-course-setup",
+    "path": "/admin/f/ac-07-course-setup",
+    "file": "66-3610.png"
+  },
+  {
+    "id": "66:3730",
+    "name": "ac-08-course-categories",
+    "path": "/admin/f/ac-08-course-categories",
+    "file": "66-3730.png"
+  },
+  {
+    "id": "66:3847",
+    "name": "ac-09-sections",
+    "path": "/admin/f/ac-09-sections",
+    "file": "66-3847.png"
+  },
+  {
+    "id": "66:3982",
+    "name": "ac-10-master-scheduling",
+    "path": "/admin/f/ac-10-master-scheduling",
+    "file": "66-3982.png"
+  },
+  {
+    "id": "66:4235",
+    "name": "ac-11-pending-schedules",
+    "path": "/admin/f/ac-11-pending-schedules",
+    "file": "66-4235.png"
+  },
+  {
+    "id": "66:4424",
+    "name": "ac-12-grading-schemes",
+    "path": "/admin/f/ac-12-grading-schemes",
+    "file": "66-4424.png"
+  },
+  {
+    "id": "66:4615",
+    "name": "ac-13-pending-grades",
+    "path": "/admin/f/ac-13-pending-grades",
+    "file": "66-4615.png"
+  },
+  {
+    "id": "66:4809",
+    "name": "ac-14-faculty",
+    "path": "/admin/f/ac-14-faculty",
+    "file": "66-4809.png"
+  },
+  {
+    "id": "66:4968",
+    "name": "ac-15-course-evaluations",
+    "path": "/admin/f/ac-15-course-evaluations",
+    "file": "66-4968.png"
+  },
+  {
+    "id": "66:5364",
+    "name": "ac-16-course-resources",
+    "path": "/admin/f/ac-16-course-resources",
+    "file": "66-5364.png"
+  },
+  {
+    "id": "66:5552",
+    "name": "ac-17-student-requirements",
+    "path": "/admin/f/ac-17-student-requirements",
+    "file": "66-5552.png"
+  },
+  {
+    "id": "66:5700",
+    "name": "ac-18-loa-requests",
+    "path": "/admin/f/ac-18-loa-requests",
+    "file": "66-5700.png"
+  },
+  {
+    "id": "66:5844",
+    "name": "ac-19-withdraw-requests",
+    "path": "/admin/f/ac-19-withdraw-requests",
+    "file": "66-5844.png"
+  },
+  {
+    "id": "66:5975",
+    "name": "ac-20-create-student",
+    "path": "/admin/f/ac-20-create-student",
+    "file": "66-5975.png"
+  },
+  {
+    "id": "71:13",
+    "name": "xx-1-lab-booking-calendar",
+    "path": "/admin/f/xx-1-lab-booking-calendar",
+    "file": "71-13.png"
+  },
+  {
+    "id": "71:195",
+    "name": "xx-2-lab-usage-analytics",
+    "path": "/admin/f/xx-2-lab-usage-analytics",
+    "file": "71-195.png"
+  },
+  {
+    "id": "71:436",
+    "name": "xx-3-simulation-templates",
+    "path": "/admin/f/xx-3-simulation-templates",
+    "file": "71-436.png"
+  },
+  {
+    "id": "71:567",
+    "name": "xx-4-lab-compliance",
+    "path": "/admin/f/xx-4-lab-compliance",
+    "file": "71-567.png"
+  },
+  {
+    "id": "71:709",
+    "name": "xx-5-preceptor-management",
+    "path": "/admin/f/xx-5-preceptor-management",
+    "file": "71-709.png"
+  },
+  {
+    "id": "71:1016",
+    "name": "xx-6-competency-tracking",
+    "path": "/admin/f/xx-6-competency-tracking",
+    "file": "71-1016.png"
+  },
+  {
+    "id": "71:1203",
+    "name": "xx-7-clinical-compliance",
+    "path": "/admin/f/xx-7-clinical-compliance",
+    "file": "71-1203.png"
+  },
+  {
+    "id": "71:1364",
+    "name": "xx-8-practicum-reports",
+    "path": "/admin/f/xx-8-practicum-reports",
+    "file": "71-1364.png"
+  },
+  {
+    "id": "71:1516",
+    "name": "xx-9-disposal-review-queue",
+    "path": "/admin/f/xx-9-disposal-review-queue",
+    "file": "71-1516.png"
+  }
+]

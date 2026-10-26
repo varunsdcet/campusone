@@ -1,0 +1,271 @@
+.mh-live {
+  display: grid;
+  gap: 14px;
+  padding: 18px 20px;
+  border: 1px solid #dbe3ef;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.mh-live--loading {
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.mh-live__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.mh-live__head h3 {
+  margin: 2px 0 0;
+  font-size: 1.05rem;
+  color: #0f172a;
+}
+
+.mh-live__brand {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #2563eb;
+}
+
+.mh-live[data-provider="jitsi"] .mh-live__brand {
+  color: #64748b;
+}
+
+.mh-live__state {
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: #f1f5f9;
+  color: #475569;
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.mh-live__state.is-live {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.mh-live__state.is-live::before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background: #16a34a;
+  vertical-align: 1px;
+}
+
+.mh-live__note {
+  margin: 0;
+  color: #334155;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
+
+.mh-live__counts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.mh-live__counts > div {
+  display: grid;
+  gap: 2px;
+  padding: 12px 14px;
+  border: 1px solid #dbe3ef;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.mh-live__counts strong {
+  color: #0f172a;
+  font-size: 1.25rem;
+}
+
+.mh-live__counts span {
+  color: #64748b;
+  font-size: 0.78rem;
+}
+
+@media (max-width: 520px) {
+  .mh-live__counts {
+    grid-template-columns: 1fr;
+  }
+}
+
+.mh-live__actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.mh-live__danger,
+.mh-live__ghost {
+  padding: 7px 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: #fff;
+}
+
+.mh-live__danger {
+  border: 1px solid #dc2626;
+  color: #dc2626;
+}
+
+.mh-live__danger:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.mh-live__ghost {
+  border: 1px solid #cbd5e1;
+  color: #334155;
+}
+
+.mh-live__message,
+.mh-live__muted {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.82rem;
+}
+
+.mh-live__error {
+  margin: 0;
+  color: #b91c1c;
+  font-size: 0.88rem;
+}
+
+.mh-live__recordings h4 {
+  margin: 0 0 8px;
+  font-size: 0.9rem;
+  color: #0f172a;
+}
+
+.mh-live__recordings ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 6px;
+}
+
+.mh-live__recordings li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 10px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.mh-live__recordings li div {
+  display: grid;
+  gap: 2px;
+}
+
+.mh-live__recordings li span {
+  color: #64748b;
+  font-size: 0.78rem;
+}
+
+.mh-live__recordings a {
+  color: #2563eb;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.mh-live-launch {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: #f1f5f9;
+}
+
+.mh-live-launch__card {
+  width: min(560px, 100%);
+  display: grid;
+  gap: 14px;
+}
+
+.mh-live-launch__status {
+  padding: 22px 24px;
+  border: 1px solid #dbe3ef;
+  border-radius: 10px;
+  background: #fff;
+  text-align: center;
+}
+
+.mh-live-launch__status h1 {
+  margin: 0 0 6px;
+  font-size: 1.15rem;
+  color: #0f172a;
+}
+
+.mh-live-launch__status p {
+  margin: 0;
+  color: #475569;
+  font-size: 0.9rem;
+}
+
+.mh-live-launch__spinner {
+  width: 28px;
+  height: 28px;
+  margin: 0 auto 12px;
+  border: 3px solid #dbeafe;
+  border-top-color: #2563eb;
+  border-radius: 50%;
+  animation: mh-live-spin 0.9s linear infinite;
+}
+
+.mh-live-launch__back {
+  justify-self: center;
+  color: #2563eb;
+  font-size: 0.85rem;
+}
+
+.mh-live-room {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: #0f172a;
+}
+
+.mh-live-room iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.mh-live-room__leave {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: #b91c1c;
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+@keyframes mh-live-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

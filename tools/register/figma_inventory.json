@@ -1,0 +1,1280 @@
+{
+  "admin": [
+    {
+      "id": "134:9",
+      "name": "ad-09-loa-builder"
+    },
+    {
+      "id": "17:1049",
+      "name": "rg-01-student-360"
+    },
+    {
+      "id": "134:181",
+      "name": "ad-10-conversion-dashboard"
+    },
+    {
+      "id": "17:1248",
+      "name": "ad-02-application-queue"
+    },
+    {
+      "id": "134:385",
+      "name": "pl-03-security-policy"
+    },
+    {
+      "id": "17:1493",
+      "name": "ad-03-application-detail"
+    },
+    {
+      "id": "17:2790",
+      "name": "lb-08-lab-session"
+    },
+    {
+      "id": "17:2903",
+      "name": "wf-02-workflow-designer"
+    },
+    {
+      "id": "17:8529",
+      "name": "crm-01-dashboard"
+    },
+    {
+      "id": "17:8674",
+      "name": "crm-02-leads"
+    },
+    {
+      "id": "17:8811",
+      "name": "crm-03-lead-360"
+    },
+    {
+      "id": "17:8957",
+      "name": "crm-04-campaigns"
+    },
+    {
+      "id": "17:9050",
+      "name": "crm-05-campaign-detail"
+    },
+    {
+      "id": "17:9149",
+      "name": "crm-06-events"
+    },
+    {
+      "id": "17:9244",
+      "name": "crm-07-counsellor-queue"
+    },
+    {
+      "id": "17:9338",
+      "name": "crm-08-funnel-analytics"
+    },
+    {
+      "id": "17:9979",
+      "name": "SS-01 Success Dashboard"
+    },
+    {
+      "id": "17:10106",
+      "name": "SS-02 Alert Queue"
+    },
+    {
+      "id": "17:10211",
+      "name": "SS-03 Student Success 360"
+    },
+    {
+      "id": "17:10294",
+      "name": "SS-04 Case"
+    },
+    {
+      "id": "17:10379",
+      "name": "SS-05 Action Plan"
+    },
+    {
+      "id": "17:10486",
+      "name": "SS-06 Appointments"
+    },
+    {
+      "id": "17:10585",
+      "name": "SS-07 Intervention Analytics"
+    },
+    {
+      "id": "17:10692",
+      "name": "FN-01 Finance Dashboard"
+    },
+    {
+      "id": "17:10809",
+      "name": "FN-03 Charges"
+    },
+    {
+      "id": "17:10906",
+      "name": "FN-04 Payments"
+    },
+    {
+      "id": "17:11000",
+      "name": "FN-05 Reconciliation"
+    },
+    {
+      "id": "17:11088",
+      "name": "FN-06 Refund Queue"
+    },
+    {
+      "id": "17:11179",
+      "name": "FN-07 Holds"
+    },
+    {
+      "id": "17:11366",
+      "name": "LB-01-Lab-Dashboard"
+    },
+    {
+      "id": "17:11504",
+      "name": "LB-03-Lab-Equipment-List"
+    },
+    {
+      "id": "17:11624",
+      "name": "LB-09-Lab-Notebook"
+    },
+    {
+      "id": "17:11726",
+      "name": "PR-01-Practicum-Dashboard"
+    },
+    {
+      "id": "17:11883",
+      "name": "PR-02-Employers-Registry"
+    },
+    {
+      "id": "17:12002",
+      "name": "PR-05-Placements-Workspace"
+    },
+    {
+      "id": "17:12751",
+      "name": "WF-01-Workflow-List"
+    },
+    {
+      "id": "17:12828",
+      "name": "WF-03-Workflow-Test"
+    },
+    {
+      "id": "17:12879",
+      "name": "WF-04-Workflow-Runs"
+    },
+    {
+      "id": "17:12957",
+      "name": "RL-01-Rule-Sets"
+    },
+    {
+      "id": "17:13019",
+      "name": "RL-02-Rule-Designer"
+    },
+    {
+      "id": "17:13085",
+      "name": "RL-03-Rule-Simulator"
+    },
+    {
+      "id": "17:13147",
+      "name": "FM-01-Form-List"
+    },
+    {
+      "id": "17:13209",
+      "name": "FM-02-Form-Designer"
+    },
+    {
+      "id": "17:13281",
+      "name": "FM-03-Form-Version"
+    },
+    {
+      "id": "17:13330",
+      "name": "FM-04-Form-Submissions"
+    },
+    {
+      "id": "17:14019",
+      "name": "ad-01-admissions-dashboard"
+    },
+    {
+      "id": "17:14157",
+      "name": "ad-04-requirement-review"
+    },
+    {
+      "id": "17:14303",
+      "name": "ad-05-document-review"
+    },
+    {
+      "id": "17:14401",
+      "name": "ad-06-interview-workspace"
+    },
+    {
+      "id": "17:14539",
+      "name": "ad-07-decision-workspace"
+    },
+    {
+      "id": "17:14625",
+      "name": "ad-08-offer-builder"
+    },
+    {
+      "id": "17:14802",
+      "name": "ad-10-conversion"
+    },
+    {
+      "id": "17:14890",
+      "name": "ad-11-intake-capacity"
+    },
+    {
+      "id": "17:15028",
+      "name": "rg-02-academic-history"
+    },
+    {
+      "id": "17:15181",
+      "name": "rg-03-status-history"
+    },
+    {
+      "id": "17:15305",
+      "name": "rg-04-transfer-credits"
+    },
+    {
+      "id": "17:15432",
+      "name": "rg-05-academic-standing"
+    },
+    {
+      "id": "17:15554",
+      "name": "rg-06-completion-audit"
+    },
+    {
+      "id": "17:15688",
+      "name": "rg-07-transcript"
+    },
+    {
+      "id": "17:15786",
+      "name": "rg-08-registrar-correction"
+    },
+    {
+      "id": "17:15865",
+      "name": "rg-09-official-export"
+    },
+    {
+      "id": "17:16000",
+      "name": "cp-02-record-completeness"
+    },
+    {
+      "id": "17:16137",
+      "name": "cp-03-record-vault"
+    },
+    {
+      "id": "17:16235",
+      "name": "cp-04-retention-policies"
+    },
+    {
+      "id": "17:16334",
+      "name": "cp-05-legal-holds"
+    },
+    {
+      "id": "17:16423",
+      "name": "cp-06-evidence-mapping"
+    },
+    {
+      "id": "17:16529",
+      "name": "cp-07-accreditation-assistant"
+    },
+    {
+      "id": "17:16639",
+      "name": "cp-09-disposal-review"
+    },
+    {
+      "id": "17:16728",
+      "name": "cp-10-privacy-requests"
+    },
+    {
+      "id": "17:17016",
+      "name": "ai-01-ai-dashboard"
+    },
+    {
+      "id": "17:17225",
+      "name": "ai-02-model-registry"
+    },
+    {
+      "id": "17:17388",
+      "name": "ai-03-prompt-registry"
+    },
+    {
+      "id": "17:17552",
+      "name": "ai-04-tool-registry"
+    },
+    {
+      "id": "17:17707",
+      "name": "ai-05-knowledge-sources"
+    },
+    {
+      "id": "17:17852",
+      "name": "ai-06-ingestion-jobs"
+    },
+    {
+      "id": "17:18180",
+      "name": "ai-07-retrieval-inspector"
+    },
+    {
+      "id": "17:18303",
+      "name": "ai-08-evaluation-dashboard"
+    },
+    {
+      "id": "17:18428",
+      "name": "ai-09-citation-failures"
+    },
+    {
+      "id": "17:18538",
+      "name": "ai-10-usage-cost"
+    },
+    {
+      "id": "17:18639",
+      "name": "ai-11-ai-policy"
+    },
+    {
+      "id": "17:18712",
+      "name": "ai-12-tool-call-audit"
+    },
+    {
+      "id": "17:20634",
+      "name": "fn-08-finance-export"
+    },
+    {
+      "id": "27:118",
+      "name": "sh-01-login (Admin)"
+    },
+    {
+      "id": "65:1833",
+      "name": "lb-02-lab-rooms"
+    },
+    {
+      "id": "65:2077",
+      "name": "lb-04-equipment-detail"
+    },
+    {
+      "id": "65:2226",
+      "name": "lb-05-inventory"
+    },
+    {
+      "id": "65:2389",
+      "name": "lb-06-safety-rules"
+    },
+    {
+      "id": "65:2673",
+      "name": "lb-07-student-eligibility"
+    },
+    {
+      "id": "65:2852",
+      "name": "lb-10-incident"
+    },
+    {
+      "id": "65:2986",
+      "name": "lb-11-virtual-labs"
+    },
+    {
+      "id": "65:3146",
+      "name": "lb-12-computer-environments"
+    },
+    {
+      "id": "65:3354",
+      "name": "pr-03-sites"
+    },
+    {
+      "id": "65:3508",
+      "name": "pr-04-opportunities"
+    },
+    {
+      "id": "65:3725",
+      "name": "pr-06-agreements"
+    },
+    {
+      "id": "65:3846",
+      "name": "pr-07-logs"
+    },
+    {
+      "id": "65:4101",
+      "name": "pr-08-evaluations"
+    },
+    {
+      "id": "65:4279",
+      "name": "pr-09-incidents"
+    },
+    {
+      "id": "65:4416",
+      "name": "pr-10-employer-portal"
+    },
+    {
+      "id": "65:4530",
+      "name": "fn-02-student-account"
+    },
+    {
+      "id": "65:4632",
+      "name": "cp-01-compliance-dashboard"
+    },
+    {
+      "id": "65:4898",
+      "name": "cp-08-inspection-pack"
+    },
+    {
+      "id": "66:1146",
+      "name": "pl-01-users-and-roles"
+    },
+    {
+      "id": "66:1314",
+      "name": "pl-02-permission-matrix"
+    },
+    {
+      "id": "66:1608",
+      "name": "pl-04-session-login-audit"
+    },
+    {
+      "id": "66:1977",
+      "name": "pl-05-integrations"
+    },
+    {
+      "id": "66:2137",
+      "name": "pl-06-operations"
+    },
+    {
+      "id": "66:2284",
+      "name": "pl-07-institution-settings"
+    },
+    {
+      "id": "66:2385",
+      "name": "pl-08-notification-templates"
+    },
+    {
+      "id": "66:2707",
+      "name": "ac-01-academic-terms"
+    },
+    {
+      "id": "66:2852",
+      "name": "ac-02-academic-calendar"
+    },
+    {
+      "id": "66:3042",
+      "name": "ac-03-programs"
+    },
+    {
+      "id": "66:3189",
+      "name": "ac-04-program-detail"
+    },
+    {
+      "id": "66:3307",
+      "name": "ac-05-program-change-request"
+    },
+    {
+      "id": "66:3469",
+      "name": "ac-06-course-catalogue"
+    },
+    {
+      "id": "66:3610",
+      "name": "ac-07-course-setup"
+    },
+    {
+      "id": "66:3730",
+      "name": "ac-08-course-categories"
+    },
+    {
+      "id": "66:3847",
+      "name": "ac-09-sections"
+    },
+    {
+      "id": "66:3982",
+      "name": "ac-10-master-scheduling"
+    },
+    {
+      "id": "66:4235",
+      "name": "ac-11-pending-schedules"
+    },
+    {
+      "id": "66:4424",
+      "name": "ac-12-grading-schemes"
+    },
+    {
+      "id": "66:4615",
+      "name": "ac-13-pending-grades"
+    },
+    {
+      "id": "66:4809",
+      "name": "ac-14-faculty"
+    },
+    {
+      "id": "66:4968",
+      "name": "ac-15-course-evaluations"
+    },
+    {
+      "id": "66:5364",
+      "name": "ac-16-course-resources"
+    },
+    {
+      "id": "66:5552",
+      "name": "ac-17-student-requirements"
+    },
+    {
+      "id": "66:5700",
+      "name": "ac-18-loa-requests"
+    },
+    {
+      "id": "66:5844",
+      "name": "ac-19-withdraw-requests"
+    },
+    {
+      "id": "66:5975",
+      "name": "ac-20-create-student"
+    },
+    {
+      "id": "71:13",
+      "name": "xx-1-lab-booking-calendar"
+    },
+    {
+      "id": "71:195",
+      "name": "xx-2-lab-usage-analytics"
+    },
+    {
+      "id": "71:436",
+      "name": "xx-3-simulation-templates"
+    },
+    {
+      "id": "71:567",
+      "name": "xx-4-lab-compliance"
+    },
+    {
+      "id": "71:709",
+      "name": "xx-5-preceptor-management"
+    },
+    {
+      "id": "71:1016",
+      "name": "xx-6-competency-tracking"
+    },
+    {
+      "id": "71:1203",
+      "name": "xx-7-clinical-compliance"
+    },
+    {
+      "id": "71:1364",
+      "name": "xx-8-practicum-reports"
+    },
+    {
+      "id": "71:1516",
+      "name": "xx-9-disposal-review-queue"
+    }
+  ],
+  "teacher": [
+    {
+      "id": "3:3698",
+      "name": "T01 - Teacher Dashboard"
+    },
+    {
+      "id": "3:3890",
+      "name": "T02 \u2014 Profile: Biography"
+    },
+    {
+      "id": "3:4011",
+      "name": "T03 \u2014 Profile: Topics"
+    },
+    {
+      "id": "3:4135",
+      "name": "T04 \u2014 Profile: Availability"
+    },
+    {
+      "id": "3:4278",
+      "name": "T05 \u2014 Profile: Compensation"
+    },
+    {
+      "id": "3:4396",
+      "name": "T06 \u2014 Profile: Schedule"
+    },
+    {
+      "id": "3:4608",
+      "name": "T07 \u2014 My Courses: List"
+    },
+    {
+      "id": "3:4781",
+      "name": "T08 \u2014 My Courses: Detail"
+    },
+    {
+      "id": "3:4952",
+      "name": "T09 \u2014 Attendance Session"
+    },
+    {
+      "id": "3:5121",
+      "name": "T10 \u2014 Assessments &amp; Gradebook"
+    },
+    {
+      "id": "3:5292",
+      "name": "T11 \u2014 Workshops"
+    },
+    {
+      "id": "3:5401",
+      "name": "T12 \u2014 Students View"
+    },
+    {
+      "id": "3:5572",
+      "name": "T13 \u2014 Program Management"
+    },
+    {
+      "id": "3:5722",
+      "name": "T14 \u2014 Course Management"
+    },
+    {
+      "id": "3:5875",
+      "name": "T15 \u2014 Settings"
+    },
+    {
+      "id": "4:6136",
+      "name": "T16 \u2014 Teacher Messages &amp; Chat"
+    },
+    {
+      "id": "4:6347",
+      "name": "T17 \u2014 Notification Center"
+    },
+    {
+      "id": "4:6547",
+      "name": "T18 \u2014 Full Calendar / Timetable"
+    },
+    {
+      "id": "4:6721",
+      "name": "T19 \u2014 Create/Edit Assessment"
+    },
+    {
+      "id": "4:6864",
+      "name": "T20 \u2014 Grade Correction Workflow"
+    },
+    {
+      "id": "4:7002",
+      "name": "T21 \u2014 Attendance Correction Review"
+    },
+    {
+      "id": "4:8396",
+      "name": "T28 \u2014 Login Page"
+    },
+    {
+      "id": "4:8499",
+      "name": "T29 \u2014 Password Reset Flow"
+    },
+    {
+      "id": "4:8586",
+      "name": "T30 \u2014 MFA Challenge"
+    },
+    {
+      "id": "4:8650",
+      "name": "T31 \u2014 First Login / Profile Completion"
+    },
+    {
+      "id": "4:8858",
+      "name": "T32 \u2014 Resource / File Manager"
+    },
+    {
+      "id": "4:9078",
+      "name": "T33 \u2014 Help &amp; Support"
+    },
+    {
+      "id": "4:7293",
+      "name": "T22 \u2014 Student Detail Full Page"
+    },
+    {
+      "id": "4:7509",
+      "name": "T23 \u2014 Course Announcements"
+    },
+    {
+      "id": "4:7678",
+      "name": "T24 \u2014 Workshop Detail"
+    },
+    {
+      "id": "4:7837",
+      "name": "T25 \u2014 Add Availability Modal"
+    },
+    {
+      "id": "4:7961",
+      "name": "T26 \u2014 Course Version Editor"
+    },
+    {
+      "id": "4:8112",
+      "name": "T27 \u2014 Program Change Request"
+    },
+    {
+      "id": "4:10861",
+      "name": "T34 \u2014 Accomplishments"
+    },
+    {
+      "id": "4:11045",
+      "name": "T35 \u2014 Security Settings"
+    },
+    {
+      "id": "4:11188",
+      "name": "T36 \u2014 Course Evaluations"
+    },
+    {
+      "id": "4:11353",
+      "name": "T37 \u2014 Course Repository"
+    },
+    {
+      "id": "4:11508",
+      "name": "T38 \u2014 Pending Course Schedules"
+    },
+    {
+      "id": "4:11657",
+      "name": "T39 \u2014 Course History"
+    },
+    {
+      "id": "4:11882",
+      "name": "T40 \u2014 Workshop Enrollment Status"
+    },
+    {
+      "id": "4:12042",
+      "name": "T41 \u2014 Workshop Attendance"
+    },
+    {
+      "id": "4:12222",
+      "name": "T42 \u2014 New Workshop Enrollment"
+    },
+    {
+      "id": "4:12383",
+      "name": "T43 \u2014 Create Student Profile"
+    },
+    {
+      "id": "4:12498",
+      "name": "T44 \u2014 Academic Alerts"
+    },
+    {
+      "id": "4:12620",
+      "name": "T45 \u2014 Student Flags"
+    },
+    {
+      "id": "4:12840",
+      "name": "T46 \u2014 Student Assessments"
+    },
+    {
+      "id": "4:13060",
+      "name": "T47 \u2014 Student Requirements"
+    },
+    {
+      "id": "4:13242",
+      "name": "T48 \u2014 Leave of Absence"
+    },
+    {
+      "id": "4:13392",
+      "name": "T49 \u2014 Course Withdraw Requests"
+    },
+    {
+      "id": "4:13533",
+      "name": "T50 \u2014 Program Types"
+    },
+    {
+      "id": "4:13710",
+      "name": "T51 \u2014 Manage Terms"
+    },
+    {
+      "id": "4:14049",
+      "name": "T52 \u2014 Academic Calendars"
+    },
+    {
+      "id": "4:14305",
+      "name": "T53 \u2014 Master Scheduling"
+    },
+    {
+      "id": "4:14505",
+      "name": "T54 \u2014 Courses &amp; Sessions"
+    },
+    {
+      "id": "4:14670",
+      "name": "T55 \u2014 Add Course Form"
+    },
+    {
+      "id": "4:14878",
+      "name": "T56 \u2014 Active Courses"
+    },
+    {
+      "id": "4:15104",
+      "name": "T57 \u2014 Course Textbooks"
+    },
+    {
+      "id": "4:15486",
+      "name": "T58 \u2014 Course Categories"
+    },
+    {
+      "id": "4:15699",
+      "name": "T59 \u2014 Course Groups &amp; Types"
+    },
+    {
+      "id": "4:15877",
+      "name": "T60 \u2014 Course Resources Management"
+    },
+    {
+      "id": "4:16047",
+      "name": "T61 \u2014 Grading Schemes"
+    },
+    {
+      "id": "4:16245",
+      "name": "T62 \u2014 Pending Grade Submissions"
+    },
+    {
+      "id": "4:16388",
+      "name": "T63 \u2014 Students by Status Filter"
+    },
+    {
+      "id": "17:775",
+      "name": "in-07-gradebook"
+    },
+    {
+      "id": "17:6530",
+      "name": "in-02-my-courses"
+    },
+    {
+      "id": "17:6652",
+      "name": "in-03-course-detail"
+    },
+    {
+      "id": "17:6739",
+      "name": "in-04-roster"
+    },
+    {
+      "id": "17:6837",
+      "name": "in-05-attendance"
+    },
+    {
+      "id": "17:6962",
+      "name": "in-06-assessment-manager"
+    },
+    {
+      "id": "17:7058",
+      "name": "in-08-lectures"
+    },
+    {
+      "id": "17:7147",
+      "name": "in-09-lecture-review"
+    },
+    {
+      "id": "17:7217",
+      "name": "in-10-lab-sessions"
+    },
+    {
+      "id": "17:7313",
+      "name": "in-11-student-detail"
+    },
+    {
+      "id": "17:7388",
+      "name": "in-12-ai-course-studio"
+    },
+    {
+      "id": "17:7479",
+      "name": "in-13-studio-generation"
+    },
+    {
+      "id": "17:7596",
+      "name": "in-14-outcome-mapping"
+    },
+    {
+      "id": "17:7724",
+      "name": "in-15-question-generator"
+    },
+    {
+      "id": "17:7830",
+      "name": "in-16-rubric-generator"
+    },
+    {
+      "id": "17:7922",
+      "name": "in-17-course-approval"
+    },
+    {
+      "id": "17:8021",
+      "name": "in-18-availability"
+    },
+    {
+      "id": "17:8223",
+      "name": "in-19-compensation"
+    },
+    {
+      "id": "17:8317",
+      "name": "in-20-workshops"
+    },
+    {
+      "id": "27:60",
+      "name": "sh-01-login (Teacher)"
+    }
+  ],
+  "student": [
+    {
+      "id": "17:60",
+      "name": "st-01-student-dashboard"
+    },
+    {
+      "id": "17:581",
+      "name": "st-03-course-detail"
+    },
+    {
+      "id": "17:1673",
+      "name": "ap-01-applicant-dashboard"
+    },
+    {
+      "id": "17:1795",
+      "name": "ap-02-application-wizard"
+    },
+    {
+      "id": "17:3051",
+      "name": "st-11-lecture-detail"
+    },
+    {
+      "id": "17:3341",
+      "name": "st-02-my-courses"
+    },
+    {
+      "id": "17:3449",
+      "name": "st-04-assignments"
+    },
+    {
+      "id": "17:3548",
+      "name": "st-05-assignment-detail"
+    },
+    {
+      "id": "17:3660",
+      "name": "st-06-assessments"
+    },
+    {
+      "id": "17:3748",
+      "name": "st-07-grades"
+    },
+    {
+      "id": "17:3833",
+      "name": "st-08-attendance"
+    },
+    {
+      "id": "17:3940",
+      "name": "st-09-schedule"
+    },
+    {
+      "id": "17:4046",
+      "name": "st-10-lectures"
+    },
+    {
+      "id": "17:4131",
+      "name": "st-12-labs"
+    },
+    {
+      "id": "17:4234",
+      "name": "st-13-lab-detail"
+    },
+    {
+      "id": "17:4353",
+      "name": "st-14-ai-tutor"
+    },
+    {
+      "id": "17:4455",
+      "name": "st-15-advising"
+    },
+    {
+      "id": "17:4571",
+      "name": "st-16-services"
+    },
+    {
+      "id": "17:4682",
+      "name": "st-17-practicum"
+    },
+    {
+      "id": "17:4798",
+      "name": "st-18-finance"
+    },
+    {
+      "id": "17:4895",
+      "name": "st-19-credentials"
+    },
+    {
+      "id": "17:5009",
+      "name": "st-20-career"
+    },
+    {
+      "id": "17:5133",
+      "name": "st-21-messages"
+    },
+    {
+      "id": "17:5245",
+      "name": "st-22-resources"
+    },
+    {
+      "id": "17:5399",
+      "name": "ap-03-requirements"
+    },
+    {
+      "id": "17:5512",
+      "name": "ap-04-documents"
+    },
+    {
+      "id": "17:5615",
+      "name": "ap-05-interview"
+    },
+    {
+      "id": "17:5745",
+      "name": "ap-06-application-status"
+    },
+    {
+      "id": "17:5842",
+      "name": "ap-07-offer"
+    },
+    {
+      "id": "17:5927",
+      "name": "ap-08-contract"
+    },
+    {
+      "id": "17:6009",
+      "name": "ap-09-loa"
+    },
+    {
+      "id": "17:6095",
+      "name": "ap-10-payment"
+    },
+    {
+      "id": "17:6200",
+      "name": "ap-11-onboarding"
+    },
+    {
+      "id": "17:6292",
+      "name": "ap-12-applicant-ai-drawer"
+    }
+  ],
+  "auth": [
+    {
+      "id": "27:2",
+      "name": "sh-01-login (Student)"
+    },
+    {
+      "id": "17:6",
+      "name": "sh-01-login"
+    },
+    {
+      "id": "66:6290",
+      "name": "dc-01-transcript-pdf"
+    },
+    {
+      "id": "17:229",
+      "name": "sh-06-universal-search"
+    },
+    {
+      "id": "66:6386",
+      "name": "dc-02-loa-pdf"
+    },
+    {
+      "id": "17:3179",
+      "name": "sh-02-mfa"
+    },
+    {
+      "id": "66:6442",
+      "name": "dc-03-offer-pdf"
+    },
+    {
+      "id": "17:3221",
+      "name": "sh-04-role-selection"
+    },
+    {
+      "id": "66:6500",
+      "name": "dc-04-contract-pdf"
+    },
+    {
+      "id": "17:13395",
+      "name": "SH-03-Reset-Password"
+    },
+    {
+      "id": "17:13425",
+      "name": "SH-05-Notifications"
+    },
+    {
+      "id": "17:13448",
+      "name": "SH-07-Calendar"
+    },
+    {
+      "id": "17:13515",
+      "name": "SH-08-Profile"
+    },
+    {
+      "id": "17:13574",
+      "name": "SH-09-Security"
+    },
+    {
+      "id": "17:13640",
+      "name": "SH-10-Privacy"
+    },
+    {
+      "id": "65:5044",
+      "name": "mobile-student-home"
+    },
+    {
+      "id": "65:5112",
+      "name": "mobile-course"
+    },
+    {
+      "id": "65:5173",
+      "name": "mobile-ask-myheritage"
+    },
+    {
+      "id": "66:8",
+      "name": "sh-11-administration-home"
+    },
+    {
+      "id": "66:140",
+      "name": "sh-12-approval-inbox"
+    },
+    {
+      "id": "66:270",
+      "name": "sh-13-analytics-home"
+    },
+    {
+      "id": "66:390",
+      "name": "sh-14-error-404"
+    },
+    {
+      "id": "66:436",
+      "name": "sh-15-error-5xx"
+    },
+    {
+      "id": "66:606",
+      "name": "sh-16-session-expired"
+    },
+    {
+      "id": "66:697",
+      "name": "sh-17-help-centre"
+    },
+    {
+      "id": "66:828",
+      "name": "sh-18-accessibility-statement"
+    },
+    {
+      "id": "66:923",
+      "name": "sh-19-privacy-policy"
+    },
+    {
+      "id": "66:6852",
+      "name": "dc-05-fee-receipt-pdf"
+    },
+    {
+      "id": "66:6942",
+      "name": "dc-06-id-card-template"
+    },
+    {
+      "id": "66:7025",
+      "name": "dc-07-email-template"
+    },
+    {
+      "id": "66:7076",
+      "name": "mb-03-mobile-schedule"
+    },
+    {
+      "id": "66:7170",
+      "name": "mb-04-mobile-grades"
+    },
+    {
+      "id": "66:7253",
+      "name": "mb-06-mobile-notifications"
+    },
+    {
+      "id": "66:7327",
+      "name": "mb-07-mobile-profile"
+    },
+    {
+      "id": "66:7390",
+      "name": "mb-08-mobile-fees"
+    },
+    {
+      "id": "66:7460",
+      "name": "mb-09-mobile-library"
+    },
+    {
+      "id": "66:7538",
+      "name": "mb-10-mobile-documents"
+    },
+    {
+      "id": "102:7",
+      "name": "mb-03-student-todo"
+    },
+    {
+      "id": "102:106",
+      "name": "mb-04-student-schedule"
+    },
+    {
+      "id": "102:203",
+      "name": "mb-09-notifications"
+    },
+    {
+      "id": "102:303",
+      "name": "mb-10-offline-state"
+    },
+    {
+      "id": "102:467",
+      "name": "mb-06-instructor-home"
+    },
+    {
+      "id": "102:583",
+      "name": "mb-07-instructor-attendance"
+    },
+    {
+      "id": "102:750",
+      "name": "mb-08-instructor-grading"
+    },
+    {
+      "id": "102:888",
+      "name": "dc-07-tablet-attendance"
+    },
+    {
+      "id": "102:1165",
+      "name": "canvas"
+    },
+    {
+      "id": "102:1483",
+      "name": "dev-handoff-canvas"
+    },
+    {
+      "id": "102:1734",
+      "name": "cp-08-inspection-pack-builder"
+    },
+    {
+      "id": "102:1941",
+      "name": "dc-02-loa-ircc-compliant"
+    }
+  ],
+  "components": [
+    {
+      "id": "26:6",
+      "name": "component-library-buttons-inputs"
+    },
+    {
+      "id": "26:155",
+      "name": "component-library-cards-tables-status"
+    },
+    {
+      "id": "26:328",
+      "name": "component-library-patterns-states"
+    },
+    {
+      "id": "26:613",
+      "name": "state-loading"
+    },
+    {
+      "id": "26:704",
+      "name": "state-empty"
+    },
+    {
+      "id": "26:771",
+      "name": "state-error"
+    },
+    {
+      "id": "26:874",
+      "name": "state-permission-denied"
+    },
+    {
+      "id": "26:916",
+      "name": "state-offline"
+    },
+    {
+      "id": "26:1017",
+      "name": "state-archived"
+    },
+    {
+      "id": "65:5363",
+      "name": "design-tokens-sheet"
+    },
+    {
+      "id": "65:5712",
+      "name": "admin-shell-component"
+    },
+    {
+      "id": "66:7864",
+      "name": "fd-05-responsive-breakpoints"
+    },
+    {
+      "id": "66:8013",
+      "name": "fd-06-accessibility-annotations"
+    },
+    {
+      "id": "66:8133",
+      "name": "fd-07-fixture-data-set"
+    }
+  ]
+}

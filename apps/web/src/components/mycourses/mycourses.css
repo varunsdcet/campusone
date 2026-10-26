@@ -1,0 +1,76 @@
+.mc-role {
+  font-style: italic;
+}
+
+.mc-status-required {
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.mc-grading-type {
+  color: #1d4ed8;
+  font-weight: 600;
+}
+
+.mc-counters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  font-weight: 600;
+}
+
+.mc-banner {
+  margin: 12px 0;
+  padding: 10px 14px;
+  border: 1px solid #fcd34d;
+  border-radius: 6px;
+  background: #fffbeb;
+  color: #92400e;
+}
+
+.mc-group-meta {
+  font-weight: 400;
+  color: var(--mh-text-subtle, #64748b);
+}
+
+.mc-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  color: #334155;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.mc-student {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Keeps Save Attendance scrollable clear of the fixed Ask CampusOne button. */
+.mc-save-bar {
+  margin-bottom: 80px;
+}
+
+.mc-score {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.mc-score__input {
+  width: 90px;
+}
+
+.mc-note {
+  width: 100%;
+  min-height: 34px;
+  resize: vertical;
+}

@@ -1,0 +1,5 @@
+.venv
+__pycache__
+install.log
+cache
+**/.DS_Store

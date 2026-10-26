@@ -1,0 +1,55 @@
+id,title,actors,mode,writes,approval,shell,status
+SH-01,Sign in,all,WRITE,session,n/a,shared,implemented
+SH-12,Approval inbox,admin|registrar,WRITE,approval_decision,n/a,admin,implemented
+AI-13,Campus Coach,applicant|student|instructor|admin|employer|registrar,WRITE,ai_interaction,n/a,shared,implemented
+AI-14,Shared AI platform contracts,shared,READ,none,n/a,shared,implemented
+AI-01,AI tool registry and executor,shared,READ,none,n/a,shared,implemented
+AI-02,AI request context builder,shared,READ,none,n/a,shared,implemented
+AI-05,Student Advisor,student,WRITE,ai_interaction,n/a,student,implemented
+AI-07,What-if academic planner,student,WRITE,degree_plan_scenario,n/a,student,implemented
+AI-04,Institutional knowledge retrieve,shared,READ,none,n/a,shared,implemented
+AI-08,Study Coach,student,WRITE,ai_interaction,n/a,student,implemented
+AI-09,Faculty Assistant,instructor,WRITE,ai_interaction,n/a,instructor,implemented
+AI-10,Assessment rubric assistant,instructor,WRITE,ai_interaction,n/a,instructor,implemented
+AI-11,Grading feedback assistant,instructor,WRITE,ai_interaction,n/a,instructor,implemented
+AI-12,Student Success intelligence,student|instructor|admin|registrar,READ,none,n/a,shared,implemented
+AI-13b,Intervention case workflow,admin|registrar|instructor,WRITE,success_case,n/a,admin,implemented
+AI-14b,Admin Ask-Your-Data,admin|registrar,WRITE,ai_interaction,n/a,admin,implemented
+AI-15,Executive academic intelligence,admin|registrar,READ,none,n/a,admin,implemented
+AI-16,Student Services assistant,student,WRITE,ai_interaction,n/a,student,implemented
+AI-17,Admissions assistant,applicant|admin|registrar,WRITE,ai_interaction,n/a,applicant,implemented
+AI-18,Career assistant,student,WRITE,ai_interaction,n/a,student,implemented
+AI-19,AI governance snapshot,admin|registrar,READ,none,n/a,admin,implemented
+AI-20,AI evaluation harness,shared,READ,none,n/a,shared,implemented
+AI-21,AI usage cost observability,admin|registrar,READ,none,n/a,admin,implemented
+AI-22,Study Coach policy gates,shared,READ,none,n/a,shared,implemented
+AC-21,Program catalog,admin|registrar,WRITE,program|program_version,n/a,admin,implemented
+AC-22,Prerequisite graph,admin|registrar,WRITE,course_prerequisite,n/a,admin,implemented
+AC-23,Degree progress engine,student|admin|registrar,READ,none,n/a,student,implemented
+AC-24,Course offerings,admin|registrar,WRITE,course_offering,n/a,admin,implemented
+AC-25,Transfer credits,admin|registrar,WRITE,transfer_credit,n/a,admin,implemented
+AC-26,Rubrics,instructor|admin,WRITE,rubric,n/a,instructor,implemented
+ST-01,Student dashboard,student,READ,none,n/a,student,implemented
+ST-02,My courses,student,READ,none,n/a,student,implemented
+ST-03,Course detail,student,READ,none,n/a,student,implemented
+ST-04,Assignments,student,READ,none,n/a,student,implemented
+ST-05,Assignment detail and submission,student,WRITE,submission|file_object,n/a,student,implemented
+ST-06,Assessments,student,WRITE,assessment_attempt,n/a,student,implemented
+ST-07,Student grades,student,READ,none,n/a,student,implemented
+ST-08,Attendance,student,READ,none,n/a,student,implemented
+ST-09,Schedule,student,READ,none,n/a,student,implemented
+ST-10,Lectures,student,READ,none,n/a,student,implemented
+ST-11,Lecture detail,student,READ,none,n/a,student,implemented
+ST-12,Labs,student,READ,none,n/a,student,implemented
+ST-13,Lab notebook,student,WRITE,lab_notebook,n/a,student,implemented
+ST-14,AI tutor / Study Coach,student,WRITE,ai_interaction,n/a,student,implemented
+ST-15,Advising,student,WRITE,advising_appointment,n/a,student,implemented
+ST-16,Student services,student,WRITE,service_request,approval,student,implemented
+ST-17,Practicum,student,WRITE,practicum_log,approval,student,implemented
+ST-18,Finance,student,READ,none,n/a,student,implemented
+ST-19,Credentials,student,READ,none,n/a,student,implemented
+ST-20,Career,student,WRITE,saved_opportunity,n/a,student,implemented
+ST-21,Ask about grade,student,WRITE,message,n/a,student,implemented
+ST-22,Resources,student,READ,none,n/a,student,implemented
+IN-07,Gradebook,instructor,WRITE,grade_draft|publish_request,approval,instructor,implemented
+MB-08,Mobile grades read-only,instructor,READ,none,n/a,mobile,implemented

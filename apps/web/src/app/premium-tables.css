@@ -1,0 +1,114 @@
+/* Premium native-table foundation.
+   :where() keeps specificity intentionally low so module-specific layouts win. */
+:where(table) {
+  width: 100%;
+  border: 1px solid var(--mh-border, #dfe5e1);
+  border-radius: 14px;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: var(--mh-surface, #fff);
+  color: var(--mh-text, #13231f);
+  font-variant-numeric: tabular-nums;
+  overflow: hidden;
+}
+
+:where(table thead) {
+  background: linear-gradient(180deg, #f7faf8 0%, #eef4f1 100%);
+}
+
+:where(table th) {
+  padding: 12px 14px;
+  border-bottom: 1px solid #d7e1dc;
+  color: var(--mh-text-muted, #5f6f68);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.055em;
+  line-height: 1.25;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+:where(table td) {
+  padding: 13px 14px;
+  border-bottom: 1px solid #e8edea;
+  color: var(--mh-text, #13231f);
+  line-height: 1.4;
+  vertical-align: middle;
+  transition: background-color 140ms ease, box-shadow 140ms ease;
+}
+
+:where(table tbody tr:last-child td) {
+  border-bottom: 0;
+}
+
+:where(table tbody tr:hover td) {
+  background-color: #f6faf8;
+}
+
+:where(table tbody tr:focus-within td) {
+  background-color: #f0f7f4;
+}
+
+:where(table a) {
+  color: var(--mh-brand, #0f4b3d);
+  font-weight: 700;
+  text-underline-offset: 3px;
+}
+
+:where(table a:hover) {
+  text-decoration: underline;
+}
+
+:where(table input[type="checkbox"]) {
+  width: 17px;
+  height: 17px;
+  margin: 0;
+  accent-color: var(--mh-brand, #0f4b3d);
+  cursor: pointer;
+}
+
+:where(.mh-sa__table-wrap, .curriculum-table-wrap, .mh-lms-qb-table-wrap) {
+  width: 100%;
+  border: 1px solid var(--mh-border, #dfe5e1);
+  border-radius: 14px;
+  background: var(--mh-surface, #fff);
+  box-shadow: 0 10px 30px rgba(16, 55, 44, 0.06);
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scrollbar-color: #adc0b7 transparent;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+
+:where(.mh-sa__table-wrap, .curriculum-table-wrap, .mh-lms-qb-table-wrap) table {
+  border: 0;
+  border-radius: 0;
+}
+
+:where(.mh-sa__table-wrap, .curriculum-table-wrap, .mh-lms-qb-table-wrap)::-webkit-scrollbar {
+  height: 8px;
+}
+
+:where(.mh-sa__table-wrap, .curriculum-table-wrap, .mh-lms-qb-table-wrap)::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background: #adc0b7;
+  background-clip: padding-box;
+}
+
+@media (max-width: 720px) {
+  :where(table th) {
+    padding: 11px 12px;
+  }
+
+  :where(table td) {
+    padding: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :where(table td) {
+    transition: none;
+  }
+}

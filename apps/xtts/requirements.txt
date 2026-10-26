@@ -1,0 +1,12 @@
+# Coqui TTS (XTTS-v2) needs Python >= 3.9, < 3.12.
+# torch 2.6+ and transformers 4.50+ break XTTS-v2 checkpoint loading / generation, so both are pinned.
+torch==2.5.1
+torchaudio==2.5.1
+transformers==4.40.2
+# Newer spaCy releases only build on Python 3.10+.
+spacy==3.7.5
+# librosa 0.10.0 imports pkg_resources, which setuptools 81+ removed.
+setuptools<81
+# bangla 0.0.5 uses Python 3.10-only type syntax.
+bangla==0.0.2
+TTS @ git+https://github.com/Jaden-J/Coqui-TTS-XTTS-v2-.git@dev

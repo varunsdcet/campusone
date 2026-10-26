@@ -1,0 +1,17 @@
+import Link from "next/link";
+import { SelfpacedShell } from "@/components/selfpaced/SelfpacedShell";
+
+const sections = [
+  ["Information we collect", "Application identity and contact details; address, residency and program choices; required admission documents; English-test registration data and identifiers; account, enrolment, payment reference, learning progress, assessments and certificates; and security/audit records needed to operate the service."],
+  ["Why we use it", "To process admission and placement-test registrations, verify identity, deliver self-paced courses, record progress, issue verifiable certificates, support learners, meet legal or regulatory duties, prevent misuse and improve accessibility and reliability."],
+  ["Payments", "Card details are entered on Stripe-hosted Checkout and are not stored by this portal. CampusOne receives the payment status, amount, currency, checkout reference and limited billing/contact information needed to reconcile enrolment."],
+  ["English placement testing", "Registration details may be used by CampusOne staff and the testing provider to administer the test, match results and share results only with institutions the learner identifies. Test-provider terms may also apply."],
+  ["AI-assisted course content", "Authorised administrators and instructors may use AI to prepare a course draft. Drafts remain subject to human academic review before publication. Learner personal data should not be placed into course-generation prompts."],
+  ["Sharing and retention", "Access is limited by role. Information may be shared with service providers that host, secure, process payments or administer testing, and with authorities where law requires. Records are retained only for operational, academic, legal and audit needs, then securely deleted or de-identified."],
+  ["Your choices and rights", "You may ask CampusOne to access or correct your information, withdraw optional communications, or raise a privacy concern. Some academic, financial and compliance records must be retained even after access ends."],
+  ["Security and contact", "The portal uses authenticated access, role controls and audit records. No online system is risk-free. For access, correction or privacy questions, contact CampusOne through its official website."],
+];
+
+export default function PrivacyPage() {
+  return <SelfpacedShell><main style={{maxWidth:960,margin:"0 auto",padding:"64px 24px 96px",color:"#1d3028"}}><p className="sp-kicker">PRIVACY NOTICE</p><h1 style={{font:"600 clamp(42px,7vw,72px)/1 var(--mh-font-display)",letterSpacing:"-.04em",margin:"10px 0 18px"}}>Your information, handled with care.</h1><p className="sp-lede">This notice explains the data used by CampusOne admissions, the CampusOne English Test and the self-paced learning portal. Last updated: October 7, 2026.</p><div style={{display:"grid",gap:14,marginTop:36}}>{sections.map(([title,copy])=><section key={title} style={{background:"#fff",border:"1px solid #dde3df",borderRadius:16,padding:"24px 26px"}}><h2 style={{margin:"0 0 8px",fontSize:22}}>{title}</h2><p style={{margin:0,color:"#59675f",lineHeight:1.7}}>{copy}</p></section>)}</div><div className="sp-hero__cta" style={{marginTop:30}}><a className="sp-btn sp-btn--primary" href="https://hccbconline.com/pdf/privacy-policy.pdf" target="_blank" rel="noreferrer">Read official policy (PDF)</a><Link className="sp-btn sp-btn--ghost" href="/selfpaced">Return to self-paced learning</Link></div></main></SelfpacedShell>;
+}

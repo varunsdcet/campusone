@@ -1,0 +1,22 @@
+{
+  "name": "myheritage",
+  "private": true,
+  "packageManager": "pnpm@9.15.9",
+  "scripts": {
+    "dev": "pnpm -r --parallel --filter @myheritage/api --filter @myheritage/web --filter @myheritage/workers run dev",
+    "build": "pnpm -r run build",
+    "lint": "pnpm -r run lint",
+    "typecheck": "pnpm -r run typecheck",
+    "test": "pnpm -r run test",
+    "db:migrate": "pnpm --filter @myheritage/db migrate",
+    "db:seed": "pnpm --filter @myheritage/db seed",
+    "db:generate": "pnpm --filter @myheritage/db generate",
+    "verify": "pnpm lint && pnpm typecheck && pnpm test && pnpm --filter @myheritage/api openapi:check && pnpm --filter @myheritage/tokens contrast",
+    "proof": "pnpm --filter @myheritage/api proof"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.9",
+    "@types/node": "^22.13.10"
+  }
+}

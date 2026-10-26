@@ -1,0 +1,22 @@
+# syntax=docker/dockerfile:1
+# XTTS-v2 voice-clone server for the /akshatsir lecture reader. Build context: apps/xtts.
+
+FROM python:3.11-slim-bookworm
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends git build-essential libsndfile1 \
+  && rm -rf /var/lib/apt/lists/*
+WORKDIR /app
+
+COPY requirements.txt ./
+# CPU-only torch wheels; the default index pulls ~2 GB of CUDA libraries the VPS cannot use.
+RUN pip install --no-cache-dir torch==2.5.1 torchaudio==2.5.1 --index-url https://download.pytorch.org/whl/cpu \
+  && pip install --no-cache-dir -r requirements.txt
+
+COPY server.py ./
+COPY voices ./voices
+
+ENV COQUI_TOS_AGREED=1 \
+    XTTS_HOST=0.0.0.0 \
+    XTTS_PORT=8020
+EXPOSE 8020
+CMD ["python", "server.py"]

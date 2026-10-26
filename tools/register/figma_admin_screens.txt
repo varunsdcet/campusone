@@ -1,0 +1,138 @@
+# Admin Figma screens (page 26:1154)
+# Source: https://www.figma.com/design/yDINI8Ssqm0A2c8xChPOBr/...?node-id=26-1154
+# fileKey: yDINI8Ssqm0A2c8xChPOBr
+# Total unique screen frames: 128
+
+## Nav (from rg-01-student-360)
+Home | Recruit | Students | Academics | Compliance | Platform | Analytics
++ Ask MyHeritage | Notifications | Avatar
+
+## Screens
+ac-01-academic-terms	66:2707
+ac-02-academic-calendar	66:2852
+ac-03-programs	66:3042
+ac-04-program-detail	66:3189
+ac-05-program-change-request	66:3307
+ac-06-course-catalogue	66:3469
+ac-07-course-setup	66:3610
+ac-08-course-categories	66:3730
+ac-09-sections	66:3847
+ac-10-master-scheduling	66:3982
+ac-11-pending-schedules	66:4235
+ac-12-grading-schemes	66:4424
+ac-13-pending-grades	66:4615
+ac-14-faculty	66:4809
+ac-15-course-evaluations	66:4968
+ac-16-course-resources	66:5364
+ac-17-student-requirements	66:5552
+ac-18-loa-requests	66:5700
+ac-19-withdraw-requests	66:5844
+ac-20-create-student	66:5975
+ad-01-admissions-dashboard	17:14019
+ad-02-application-queue	17:1248
+ad-03-application-detail	17:1493
+ad-04-requirement-review	17:14157
+ad-05-document-review	17:14303
+ad-06-interview-workspace	17:14401
+ad-07-decision-workspace	17:14539
+ad-08-offer-builder	17:14625
+ad-09-loa-builder	134:9
+ad-10-conversion	17:14802
+ad-10-conversion-dashboard	134:181
+ad-11-intake-capacity	17:14890
+ai-01-ai-dashboard	17:17016
+ai-02-model-registry	17:17225
+ai-03-prompt-registry	17:17388
+ai-04-tool-registry	17:17552
+ai-05-knowledge-sources	17:17707
+ai-06-ingestion-jobs	17:17852
+ai-07-retrieval-inspector	17:18180
+ai-08-evaluation-dashboard	17:18303
+ai-09-citation-failures	17:18428
+ai-10-usage-cost	17:18538
+ai-11-ai-policy	17:18639
+ai-12-tool-call-audit	17:18712
+cp-01-compliance-dashboard	65:4632
+cp-02-record-completeness	17:16000
+cp-03-record-vault	17:16137
+cp-04-retention-policies	17:16235
+cp-05-legal-holds	17:16334
+cp-06-evidence-mapping	17:16423
+cp-07-accreditation-assistant	17:16529
+cp-08-inspection-pack	65:4898
+cp-09-disposal-review	17:16639
+cp-10-privacy-requests	17:16728
+crm-01-dashboard	17:8529
+crm-02-leads	17:8674
+crm-03-lead-360	17:8811
+crm-04-campaigns	17:8957
+crm-05-campaign-detail	17:9050
+crm-06-events	17:9149
+crm-07-counsellor-queue	17:9244
+crm-08-funnel-analytics	17:9338
+FM-01-Form-List	17:13147
+FM-02-Form-Designer	17:13209
+FM-03-Form-Version	17:13281
+FM-04-Form-Submissions	17:13330
+FN-01 Finance Dashboard	17:10692
+fn-02-student-account	65:4530
+FN-03 Charges	17:10809
+FN-04 Payments	17:10906
+FN-05 Reconciliation	17:11000
+FN-06 Refund Queue	17:11088
+FN-07 Holds	17:11179
+fn-08-finance-export	17:20634
+LB-01-Lab-Dashboard	17:11366
+lb-02-lab-rooms	65:1833
+LB-03-Lab-Equipment-List	17:11504
+lb-04-equipment-detail	65:2077
+lb-05-inventory	65:2226
+lb-06-safety-rules	65:2389
+lb-07-student-eligibility	65:2673
+lb-08-lab-session	17:2790
+LB-09-Lab-Notebook	17:11624
+lb-10-incident	65:2852
+lb-11-virtual-labs	65:2986
+lb-12-computer-environments	65:3146
+pl-01-users-and-roles	66:1146
+pl-02-permission-matrix	66:1314
+pl-03-security-policy	134:385
+pl-04-session-login-audit	66:1608
+pl-05-integrations	66:1977
+pl-06-operations	66:2137
+pl-07-institution-settings	66:2284
+pl-08-notification-templates	66:2385
+PR-01-Practicum-Dashboard	17:11726
+PR-02-Employers-Registry	17:11883
+pr-03-sites	65:3354
+pr-04-opportunities	65:3508
+PR-05-Placements-Workspace	17:12002
+pr-06-agreements	65:3725
+pr-07-logs	65:3846
+pr-08-evaluations	65:4101
+pr-09-incidents	65:4279
+pr-10-employer-portal	65:4416
+rg-01-student-360	17:1049
+rg-02-academic-history	17:15028
+rg-03-status-history	17:15181
+rg-04-transfer-credits	17:15305
+rg-05-academic-standing	17:15432
+rg-06-completion-audit	17:15554
+rg-07-transcript	17:15688
+rg-08-registrar-correction	17:15786
+rg-09-official-export	17:15865
+RL-01-Rule-Sets	17:12957
+RL-02-Rule-Designer	17:13019
+RL-03-Rule-Simulator	17:13085
+sh-01-login (Admin)	27:118
+SS-01 Success Dashboard	17:9979
+SS-02 Alert Queue	17:10106
+SS-03 Student Success 360	17:10211
+SS-04 Case	17:10294
+SS-05 Action Plan	17:10379
+SS-06 Appointments	17:10486
+SS-07 Intervention Analytics	17:10585
+WF-01-Workflow-List	17:12751
+wf-02-workflow-designer	17:2903
+WF-03-Workflow-Test	17:12828
+WF-04-Workflow-Runs	17:12879

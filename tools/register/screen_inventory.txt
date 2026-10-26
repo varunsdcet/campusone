@@ -1,0 +1,111 @@
+# Complete MyHeritage screen inventory (from WP plan + role shells)
+# Format: id|role|path|title|figma_page
+
+## Student (Figma 26:1152)
+ST-01|student|/student|Home|student
+ST-02|student|/student/courses|Courses|student
+ST-03|student|/student/courses/[sectionId]|Course detail|student
+ST-04|student|/student/modules|Modules & lessons|student
+ST-05|student|/student/continue|Continue learning|student
+ST-06|student|/student/assessments|Assessments|student
+ST-07|student|/student/grades|Grades|student
+ST-08|student|/student/attendance|Attendance|student
+ST-09|student|/student/lectures|Lectures|student
+ST-10|student|/student/labs|Labs|student
+ST-11|student|/student/calendar|Calendar|student
+ST-12|student|/student/fees|Fees|student
+ST-13|student|/student/documents|Documents / ID|student
+ST-14|student|/student/ask|Ask MyHeritage|student
+ST-15|student|/student/success|Student success|student
+ST-16|student|/student/advising|Advising|student
+ST-18|student|/student/holds|Holds|student
+ST-21|student|/student/messages|Messages|student
+ST-22|student|/student/announcements|Announcements|student
+MB-01|mobile|/m/student|Mobile home|shared-auth-mobile
+MB-02|mobile|/m/student/courses|Mobile courses|shared-auth-mobile
+MB-03|mobile|/m/student/grades|Mobile grades|shared-auth-mobile
+MB-04|mobile|/m/student/fees|Mobile fees|shared-auth-mobile
+MB-05|mobile|/m/student/library|Mobile library|shared-auth-mobile
+MB-06|mobile|/m/student/documents|Mobile documents|shared-auth-mobile
+MB-07|mobile|/m/student/profile|Mobile profile|shared-auth-mobile
+
+## Instructor / Teacher (Figma 26:1153)
+IN-01|instructor|/instructor|Home|teacher
+IN-02|instructor|/instructor/sections|Sections|teacher
+IN-03|instructor|/instructor/sections/[sectionId]|Section workspace|teacher
+IN-04|instructor|/instructor/modules|Course modules|teacher
+IN-05|instructor|/instructor/assessments|Assessments|teacher
+IN-06|instructor|/instructor/submissions|Submissions|teacher
+IN-07|instructor|/instructor/gradebook|Gradebook|teacher
+IN-08|instructor|/instructor/attendance|Attendance|teacher
+IN-09|instructor|/instructor/lectures|Lectures|teacher
+IN-10|instructor|/instructor/labs|Labs|teacher
+IN-11|instructor|/instructor/announcements|Announcements|teacher
+IN-12|instructor|/instructor/studio|Course studio|teacher
+IN-18|instructor|/instructor/messages|Messages|teacher
+IN-19|instructor|/instructor/calendar|Calendar|teacher
+IN-20|instructor|/instructor/roster|Roster|teacher
+MB-08|mobile|/m/instructor/grades|Mobile grades read-only|shared-auth-mobile
+MB-09|mobile|/m/instructor/attendance|Mobile attendance|shared-auth-mobile
+MB-10|mobile|/m/instructor/home|Mobile instructor home|shared-auth-mobile
+
+## Admin / Registrar / Platform (Figma 26:1154)
+SH-04|admin|/admin|Administration home|admin
+SH-05|admin|/admin/notifications|Notifications|admin
+SH-06|admin|/admin/calendar|Calendar|admin
+SH-07|admin|/admin/profile|Profile|admin
+SH-08|admin|/admin/security|Security|admin
+SH-10|admin|/admin/analytics|Analytics home|admin
+SH-11|admin|/admin/help|Help|admin
+SH-12|admin|/admin/approvals|Approval inbox|admin
+SH-13|admin|/admin/users|Users & roles|admin
+SH-14|admin|/admin/permissions|Permission matrix|admin
+SH-15|admin|/admin/integrations|Integrations|admin
+SH-16|admin|/admin/operations|Operations|admin
+SH-17|admin|/admin/settings|Institution settings|admin
+SH-18|admin|/admin/templates|Notification templates|admin
+SH-19|admin|/admin/search|Search|admin
+SH-20|public|/verify|Public verify|admin
+PL-01|admin|/admin/platform|Platform|admin
+PL-02|admin|/admin/flags|Feature flags|admin
+PL-05|admin|/admin/audit|Audit log|admin
+PL-06|admin|/admin/files|Files|admin
+PL-07|admin|/admin/jobs|Job health|admin
+PL-08|admin|/admin/templates|Templates|admin
+AC-01|admin|/admin/programs|Programs|admin
+AC-02|admin|/admin/courses|Courses|admin
+AC-03|admin|/admin/sections|Sections|admin
+AC-04|admin|/admin/terms|Terms|admin
+AC-05|admin|/admin/schedule|Master schedule|admin
+RG-01|admin|/admin/students|Student 360|admin
+RG-02|admin|/admin/records|Records|admin
+RG-03|admin|/admin/transcripts|Transcripts|admin
+RG-08|admin|/admin/corrections|Corrections|admin
+FN-01|admin|/admin/finance|Finance ledger|admin
+FN-02|admin|/admin/payments|Payments|admin
+FN-03|admin|/admin/refunds|Refunds|admin
+SS-01|admin|/admin/success|Success cases|admin
+AD-01|admin|/admin/admissions|Admissions|admin
+CRM-01|admin|/admin/crm|CRM|admin
+AP-01|applicant|/applicant|Applicant home|admin
+AP-02|applicant|/applicant/application|Application wizard|admin
+WF-01|admin|/admin/workflows|Workflows|admin
+RL-01|admin|/admin/rules|Rules|admin
+FM-01|admin|/admin/forms|Forms|admin
+LB-01|admin|/admin/labs|Lab rooms|admin
+PR-01|admin|/admin/practicum|Practicum|admin
+CP-01|admin|/admin/compliance|Compliance|admin
+AI-01|admin|/admin/ai|AI platform|admin
+EMP-01|employer|/employer|Employer home|admin
+
+## Shared auth (Figma 26:1155)
+SH-01|shared|/login|Sign in|shared-auth-mobile
+SH-02|shared|/mfa|MFA|shared-auth-mobile
+SH-03|shared|/reset|Reset password|shared-auth-mobile
+SH-09|shared|/role-select|Role selection|shared-auth-mobile
+
+## Component library (Figma 26:1156)
+UI-LIB|shared|/design-system|Component library|component-library
+
+## Archive & consolidate (Figma 26:1157)
+ARCH-01|shared|/archive|Archive & consolidate|archive

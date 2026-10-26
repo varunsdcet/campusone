@@ -1,0 +1,395 @@
+.wk-filters {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(180px, 1fr)) auto;
+  gap: 12px 16px;
+  align-items: end;
+}
+
+@media (max-width: 1000px) {
+  .wk-filters {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+.wk-alpha {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px 4px;
+  font-size: 12.5px;
+  font-weight: 700;
+}
+
+.wk-alpha a {
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.wk-alpha a:hover {
+  background: var(--mh-surface-muted);
+}
+
+.wk-alpha a.is-active {
+  background: #2563eb;
+  color: #fff;
+}
+
+.wk-toolbar {
+  display: flex;
+  gap: 16px;
+  align-items: end;
+}
+
+.wk-note {
+  max-width: 260px;
+  font-size: 13px;
+  color: var(--mh-text-muted);
+}
+
+.wk-act {
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  color: #2563eb;
+  cursor: pointer;
+}
+
+.wk-act--ok {
+  color: #15803d;
+}
+
+.wk-act:hover {
+  text-decoration: underline;
+}
+
+/* New enrolment: user search */
+.wk-user {
+  position: relative;
+}
+
+.wk-results {
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 4px;
+  border: 1px solid var(--mh-border-strong);
+  border-radius: 8px;
+  background: var(--mh-surface);
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.12);
+  max-height: 280px;
+  overflow: auto;
+  font-size: 14px;
+}
+
+.wk-results li {
+  padding: 2px;
+}
+
+.wk-results li.mh-sa__muted {
+  padding: 8px;
+}
+
+.wk-results button {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: 0;
+  border-radius: 6px;
+  padding: 8px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.wk-results button:hover {
+  background: var(--mh-surface-muted);
+}
+
+.wk-picked {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 11px;
+  border: 1px solid var(--mh-border-strong);
+  border-radius: 8px;
+  background: var(--mh-surface-muted);
+}
+
+.wk-summary {
+  padding: 12px 14px;
+  border: 1px dashed var(--mh-border);
+  border-radius: 10px;
+}
+
+/* Attendance */
+.wk-links {
+  display: flex;
+  gap: 18px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.wk-links a,
+.wk-links button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.wk-datebar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  border: 1px solid var(--mh-border);
+  border-radius: 10px;
+  background: var(--mh-surface);
+  font-size: 14px;
+}
+
+.wk-datebar a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.wk-datebar a:last-child {
+  justify-self: end;
+}
+
+.wk-roster-meta {
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.wk-marks {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.wk-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border: 1px solid var(--mh-border-strong);
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.wk-mark input {
+  margin: 0;
+}
+
+.wk-mark--present.is-on {
+  background: #dcfce7;
+  border-color: #86efac;
+  color: #166534;
+}
+
+.wk-mark--absent.is-on {
+  background: var(--mh-danger-soft);
+  border-color: #fca5a5;
+  color: var(--mh-danger);
+}
+
+.wk-week th a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wk-cell {
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.wk-cell a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.wk-cell .mh-sa__sub {
+  display: block;
+}
+
+.wk-cell--off {
+  color: var(--mh-text-subtle);
+  background: var(--mh-surface-muted);
+}
+
+.wk-p {
+  color: #15803d;
+  font-weight: 700;
+}
+
+.wk-a {
+  color: var(--mh-danger);
+  font-weight: 700;
+}
+
+/* Add workshop form */
+.wk-wordcount {
+  align-self: flex-end;
+  font-size: 12px;
+  color: var(--mh-text-subtle);
+}
+
+.wk-image {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wk-image img {
+  max-width: 280px;
+  max-height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--mh-border);
+}
+
+.wk-money {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.wk-money span {
+  font-weight: 600;
+  color: var(--mh-text-muted);
+}
+
+.wk-weekly {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wk-weekly-row {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  align-items: center;
+  min-height: 40px;
+}
+
+.wk-weekly-row .mh-sa__inline .mh-sa__input {
+  flex: 0 0 130px;
+}
+
+.wk-checks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+}
+
+.wk-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.wk-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.wk-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 4px 3px 10px;
+  border-radius: 999px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1e40af;
+}
+
+.wk-chip button {
+  border: 0;
+  background: none;
+  font-size: 15px;
+  line-height: 1;
+  cursor: pointer;
+  color: inherit;
+  padding: 0 4px;
+}
+
+/* Workshop detail */
+.wk-detail {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.wk-detail .ur-dl {
+  flex: 1;
+}
+
+.wk-detail-img {
+  width: 220px;
+  max-height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid var(--mh-border);
+}
+
+/* Workshop roles */
+.wk-outcomes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.wk-outcome {
+  display: grid;
+  grid-template-columns: 1fr 180px auto;
+  gap: 12px;
+  align-items: start;
+}
+
+.wk-outcome-x {
+  margin-top: 30px;
+}
+
+.wk-outcome-line + .wk-outcome-line {
+  margin-top: 4px;
+}
+
+@media print {
+  .mh-sis__sidebar,
+  .mh-sis__header,
+  .wk-noprint,
+  .mh-sa__notice,
+  .mh-sa__head-actions {
+    display: none !important;
+  }
+
+  .mh-sis__main,
+  .mh-sis__scroll {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+
+  .wk-attendance .mh-sa__card {
+    break-inside: avoid;
+    border-color: #999;
+  }
+
+  .wk-attendance .mh-sa__input {
+    border: 0;
+    padding: 0;
+  }
+}

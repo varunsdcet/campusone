@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TalkingHead avatar</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js/+esm",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/",
+          "talkinghead": "https://cdn.jsdelivr.net/gh/met4citizen/TalkingHead@1.7/modules/talkinghead.mjs"
+        }
+      }
+    </script>
+    <style>
+      html,
+      body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: radial-gradient(ellipse at 50% 28%, #243848 0%, #0b1016 68%);
+      }
+      #avatar {
+        width: 100%;
+        height: 100%;
+      }
+      #status {
+        position: absolute;
+        left: 12px;
+        right: 12px;
+        bottom: 28px;
+        text-align: center;
+        color: #d8d4c8;
+        font: 12px/1.4 system-ui, sans-serif;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="avatar"></div>
+    <div id="status">Loading avatar…</div>
+    <script type="module">
+      import { TalkingHead } from "talkinghead";
+
+      const SPEECH_GAIN = 3;
+
+      const PRESETS = {
+        female: {
+          url: "/ai-draft/brunette.glb",
+          body: "F",
+          ttsVoice: "en-US-Neural2-F",
+          ttsLang: "en-US",
+          ttsPitch: 0,
+          avatarMood: "happy",
+          cameraX: -0.18,
+          cameraY: -0.15,
+          cameraDistance: -1.4,
+          still: false,
+        },
+        male: {
+          url: "/ai-draft/avatarsdk.glb",
+          body: "M",
+          ttsVoice: "en-US-Neural2-D",
+          ttsLang: "en-US",
+          ttsPitch: -2,
+          avatarMood: "neutral",
+          // Eye-level camera; chin tipped up so he faces forward (not down)
+          cameraX: 0,
+          cameraY: 0.08,
+          cameraDistance: -1.4,
+          still: true,
+          ignoreCamera: true,
+          retarget: {
+            // Positive rx lifts chin / faces forward on AvatarSDK
+            Neck: { z: 0.01, rx: 0.22 },
+            Neck1: { z: 0.01, rx: 0.16 },
+            Neck2: { z: 0.01, rx: 0.1 },
+            Head: { rx: 0.06 },
+            LeftShoulder: { rz: -0.12 },
+            RightShoulder: { rz: 0.12 },
+            scaleToEyesLevel: 1.0,
+            origin: { y: -0.02 },
+          },
+          baseline: {
+            // Negative headRotateX = look down in TalkingHead; keep chin up
+            headRotateX: 0.12,
+            headRotateY: 0,
+            eyesLookDown: 0,
+            eyesLookUp: 0,
+            eyeBlinkLeft: 0.02,
+            eyeBlinkRight: 0.02,
+          },
+        },
+      };
+
+      const params = new URLSearchParams(location.search);
+      let gender = params.get("gender") === "male" ? "male" : "female";
+      let preset = PRESETS[gender];
+
+      const status = document.getElementById("status");
+      const node = document.getElementById("avatar");
+      let head = null;
+      let bootId = 0;
+      let ready = false;
+
+      // Called synchronously by the (same-origin) parent inside its Play click, so the browser counts it as a user gesture.
+      window.thUnlockAudio = () => {
+        const ctx = head?.audioCtx;
+        if (!ctx) return "none";
+        try {
+          if (ctx.state !== "running") void ctx.resume();
+          const silent = ctx.createBufferSource();
+          silent.buffer = ctx.createBuffer(1, 1, 22050);
+          silent.connect(ctx.destination);
+          silent.start(0);
+        } catch (_) {}
+        return ctx.state;
+      };
+      window.thAudioState = () => head?.audioCtx?.state || "none";
+
+      async function ensureAudio() {
+        if (!head?.audioCtx) return;
+        if (head.audioCtx.state === "suspended") {
+          await Promise.race([head.audioCtx.resume().catch(() => {}), new Promise((r) => setTimeout(r, 1500))]);
+        }
+        try {
+          head.start();
+        } catch (_) {}
+      }
+
+      function faceStraight() {
+        if (!head) return;
+        try {
+          head.stopGesture?.(0);
+        } catch (_) {}
+        if (preset.still || preset.ignoreCamera) {
+          // Look straight forward (samne), not down at floor / not tracking low camera
+          try {
+            head.lookAhead?.(100000);
+          } catch (_) {}
+          try {
+            // Keep chin up if morph API is available
+            if (head.mtAvatar?.headRotateX) {
+              Object.assign(head.mtAvatar.headRotateX, {
+                baseline: 0.12,
+                newvalue: 0.12,
+                needsUpdate: true,
+              });
+            }
+            if (head.mtAvatar?.eyesLookDown) {
+              Object.assign(head.mtAvatar.eyesLookDown, {
+                baseline: 0,
+                newvalue: 0,
+                needsUpdate: true,
+              });
+            }
+          } catch (_) {}
+        } else {
+          head.lookAtCamera(400);
+        }
+      }
+
+      async function boot(nextGender) {
+        const id = ++bootId;
+        ready = false;
+        gender = nextGender === "male" ? "male" : "female";
+        preset = PRESETS[gender];
+        status.style.display = "";
+        status.textContent = `Loading ${gender} avatar…`;
+
+        try {
+          if (head) {
+            try {
+              head.stopSpeaking?.();
+              head.stop?.();
+            } catch (_) {}
+            node.replaceChildren();
+            head = null;
+          }
+
+          const still = !!preset.still;
+          head = new TalkingHead(node, {
+            ttsEndpoint: "/api/ai-draft/gtts",
+            ttsLang: preset.ttsLang,
+            ttsVoice: preset.ttsVoice,
+            ttsRate: 1,
+            ttsPitch: preset.ttsPitch ?? 0,
+            lipsyncModules: ["en"],
+            lipsyncLang: "en",
+            cameraView: "upper",
+            cameraDistance: preset.cameraDistance,
+            cameraY: preset.cameraY,
+            cameraX: preset.cameraX,
+            cameraRotateEnable: false,
+            cameraPanEnable: false,
+            cameraZoomEnable: false,
+            lightAmbientIntensity: 0,
+            lightDirectIntensity: 0,
+            lightSpotIntensity: 0,
+            avatarIdleEyeContact: still ? 0 : 0.3,
+            avatarSpeakingEyeContact: still ? 0 : 0.75,
+            avatarIdleHeadMove: still ? 0 : 0.5,
+            avatarSpeakingHeadMove: still ? 0 : 0.5,
+            modelMovementFactor: still ? 0 : 1,
+            avatarIgnoreCamera: !!preset.ignoreCamera,
+            avatarMood: preset.avatarMood,
+            modelFPS: 30,
+            mixerGainSpeech: SPEECH_GAIN,
+          });
+
+          await head.showAvatar(
+            {
+              url: preset.url,
+              body: preset.body,
+              avatarMood: preset.avatarMood,
+              ttsLang: preset.ttsLang,
+              ttsVoice: preset.ttsVoice,
+              ttsPitch: preset.ttsPitch ?? 0,
+              lipsyncLang: "en",
+              retarget: preset.retarget,
+              baseline: preset.baseline,
+              avatarIgnoreCamera: !!preset.ignoreCamera,
+              avatarIdleEyeContact: still ? 0 : undefined,
+              avatarSpeakingEyeContact: still ? 0 : undefined,
+              avatarIdleHeadMove: still ? 0 : undefined,
+              avatarSpeakingHeadMove: still ? 0 : undefined,
+            },
+            (ev) => {
+              if (ev.lengthComputable) {
+                const val = Math.min(100, Math.round((ev.loaded / ev.total) * 100));
+                status.textContent = `Loading ${gender} avatar ${val}%`;
+              }
+            },
+          );
+
+          if (id !== bootId) return;
+
+          head.start();
+          // Chrome keeps resume() pending until the first user gesture, so awaiting it here would never report ready.
+          void ensureAudio();
+          faceStraight();
+          status.style.display = "none";
+          ready = true;
+          parent.postMessage({ type: "th-ready", gender, voice: preset.ttsVoice }, "*");
+        } catch (err) {
+          console.error(err);
+          status.textContent = "Avatar failed to load";
+          parent.postMessage({ type: "th-error", message: String(err) }, "*");
+        }
+      }
+
+      window.addEventListener("message", async (ev) => {
+        const data = ev.data || {};
+
+        if (data.type === "th-resume") {
+          await ensureAudio();
+          return;
+        }
+
+        // The parent may attach its listener after boot finished; answer its ping so "th-ready" is never lost.
+        if (data.type === "th-ping") {
+          if (ready) parent.postMessage({ type: "th-ready", gender, voice: preset.ttsVoice }, "*");
+          return;
+        }
+
+        if (!head) return;
+
+        if (data.type === "th-speak-text") {
+          const text = String(data.text || "").trim();
+          const id = data.id;
+          if (!text) {
+            parent.postMessage({ type: "th-speak-done", id }, "*");
+            return;
+          }
+          try {
+            await ensureAudio();
+            head.stopSpeaking?.();
+            head.setMood(preset.avatarMood || "neutral");
+            if (preset.still) {
+              faceStraight();
+              try {
+                head.stopGesture?.(0);
+              } catch (_) {}
+            } else {
+              head.lookAtCamera(500);
+            }
+            head.speakText(text, {
+              ttsLang: preset.ttsLang,
+              ttsVoice: preset.ttsVoice,
+              ttsPitch: preset.ttsPitch ?? 0,
+              lipsyncLang: "en",
+            });
+            head.speakMarker(() => {
+              parent.postMessage({ type: "th-speak-done", id }, "*");
+            });
+            head.startSpeaking?.();
+          } catch (err) {
+            console.error(err);
+            parent.postMessage({ type: "th-speak-done", id, error: String(err) }, "*");
+          }
+        }
+
+        if (data.type === "th-speak-audio") {
+          const id = data.id;
+          try {
+            await ensureAudio();
+            const bin = atob(String(data.audio || ""));
+            const bytes = new Uint8Array(bin.length);
+            for (let i = 0; i < bin.length; i++) bytes[i] = bin.charCodeAt(i);
+            const audio = await head.audioCtx.decodeAudioData(bytes.buffer);
+            // Speech plays through a 3x gain (mixerGainSpeech); scale loud clips down so they don't clip into distortion.
+            let peak = 0;
+            for (let c = 0; c < audio.numberOfChannels; c++) {
+              const ch = audio.getChannelData(c);
+              for (let i = 0; i < ch.length; i++) peak = Math.max(peak, Math.abs(ch[i]));
+            }
+            const maxPeak = 0.95 / SPEECH_GAIN;
+            if (peak > maxPeak) {
+              const k = maxPeak / peak;
+              for (let c = 0; c < audio.numberOfChannels; c++) {
+                const ch = audio.getChannelData(c);
+                for (let i = 0; i < ch.length; i++) ch[i] *= k;
+              }
+            }
+            head.setMood(preset.avatarMood || "neutral");
+            if (preset.still) faceStraight();
+            else head.lookAtCamera(500);
+            head.speakAudio(
+              { audio, words: data.words || [], wtimes: data.wtimes || [], wdurations: data.wdurations || [] },
+              { lipsyncLang: "en" },
+            );
+            try {
+              head.speakWithHands?.(400, 0.6);
+            } catch (_) {}
+            head.speakMarker(() => {
+              parent.postMessage({ type: "th-speak-done", id }, "*");
+            });
+          } catch (err) {
+            console.error(err);
+            parent.postMessage({ type: "th-speak-done", id, error: String(err) }, "*");
+          }
+        }
+
+        if (data.type === "th-stop") {
+          try {
+            head.stopSpeaking?.();
+            head.setMood("neutral");
+            head.stopGesture?.(0);
+            if (preset.still) faceStraight();
+          } catch (_) {}
+        }
+
+        if (data.type === "th-idle") {
+          head.setMood("neutral");
+          try {
+            head.stopGesture?.(0);
+            if (preset.still) faceStraight();
+          } catch (_) {}
+        }
+      });
+
+      window.addEventListener("pointerdown", () => void ensureAudio(), { once: true });
+      window.addEventListener("pointerdown", () => window.thUnlockAudio());
+      boot(gender);
+    </script>
+  </body>
+</html>

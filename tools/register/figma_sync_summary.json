@@ -1,0 +1,15 @@
+{
+  "catalogPaths": 312,
+  "createdPages": 288,
+  "skippedCustom": 24,
+  "byGroup": {
+    "Shared": 18,
+    "Admin": 142,
+    "Applicant": 12,
+    "Design System": 10,
+    "Documents": 9,
+    "Teacher": 81,
+    "Mobile": 17,
+    "Student": 23
+  }
+}
