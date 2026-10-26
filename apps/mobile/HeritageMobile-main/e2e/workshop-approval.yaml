@@ -1,0 +1,46 @@
+# Student workshop request -> instructor approval -> both views update
+appId: org.reactjs.native.example.HeritageMobile
+---
+- runFlow: login.yaml
+- tapOn:
+    id: "tab-courses"
+- tapOn:
+    id: "courses-workshops"
+- extendedWaitUntil:
+    visible:
+      id: "workshops-screen"
+    timeout: 15000
+- tapOn:
+    id: "workshops-view-available"
+- tapOn:
+    id: "workshop-register-ws_resume"
+- extendedWaitUntil:
+    visible:
+      text: "Registration sent for instructor approval"
+    timeout: 15000
+- tapOn:
+    id: "workshops-view-mine"
+- assertVisible:
+    text: "Pending approval"
+- runFlow: logout-any.yaml
+- runFlow: instructor-login.yaml
+- tapOn:
+    id: "tab-more"
+- scrollUntilVisible:
+    element:
+      id: "more-workshops"
+    direction: DOWN
+    timeout: 15000
+- tapOn:
+    id: "more-workshops"
+- extendedWaitUntil:
+    visible:
+      id: "workshop-enrolments"
+    timeout: 15000
+- scrollUntilVisible:
+    element:
+      text: "Vance, Marcus"
+    direction: DOWN
+    timeout: 15000
+- assertVisible:
+    text: "Vance, Marcus"

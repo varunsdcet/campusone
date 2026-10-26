@@ -1,0 +1,33 @@
+appId: org.reactjs.native.example.HeritageMobile
+---
+- launchApp
+- extendedWaitUntil:
+    notVisible:
+      id: "splash-screen"
+    timeout: 30000
+- runFlow:
+    when:
+      notVisible:
+        id: "login-screen"
+    file: logout-any.yaml
+- extendedWaitUntil:
+    visible:
+      id: "login-screen"
+    timeout: 30000
+- tapOn:
+    id: "login-id"
+- inputText: "monica.dahiya@heritage.edu"
+- tapOn:
+    id: "login-password"
+- inputText: "Heritage2026!"
+- tapOn:
+    text: "Welcome back"
+- tapOn:
+    id: "login-submit"
+- tapOn:
+    text: "Not Now"
+    optional: true
+- extendedWaitUntil:
+    visible:
+      id: "instructor-dashboard"
+    timeout: 20000

@@ -1,0 +1,97 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Inter-Bold.ttf",
+      "sha1": "4044e68723bef2728e14434810f6ac2707464b4e"
+    },
+    {
+      "path": "assets/fonts/Inter-Medium.ttf",
+      "sha1": "bf42297edeeba0113e4efd4a92d9227a0407dd0a"
+    },
+    {
+      "path": "assets/fonts/Inter-Regular.ttf",
+      "sha1": "0a250591bde3cb66fd523c929dc2433cab304290"
+    },
+    {
+      "path": "assets/fonts/Inter-SemiBold.ttf",
+      "sha1": "88dd678a6af491d9198af4c7f29abafe54c0cfaf"
+    },
+    {
+      "path": "assets/fonts/OFL-Inter.txt",
+      "sha1": "cdd01b7e68db81d663f1c3820b6f7c40028900dd"
+    },
+    {
+      "path": "assets/fonts/OFL-PlayfairDisplay.txt",
+      "sha1": "e997375e22668c444135764f63ddae74fc617985"
+    },
+    {
+      "path": "assets/fonts/PlayfairDisplay-Bold.ttf",
+      "sha1": "32ee78f9104b04fc41439a74c0ba4cac413579ac"
+    },
+    {
+      "path": "assets/fonts/PlayfairDisplay-Italic.ttf",
+      "sha1": "35dd320275c6e7641655cb614a3c9723810f6105"
+    },
+    {
+      "path": "assets/fonts/PlayfairDisplay-Regular.ttf",
+      "sha1": "7826db9026b62d59afaf1f44e1450ceec9edd446"
+    },
+    {
+      "path": "assets/fonts/PlayfairDisplay-SemiBold.ttf",
+      "sha1": "d8e184023695397c6ade2f27a32d39e91d3ffcbf"
+    },
+    {
+      "path": "assets/samples/sample-academic-audit.pdf",
+      "sha1": "131bb9603a1e32e28ef60bd040888612c8521c5c"
+    },
+    {
+      "path": "assets/samples/sample-ccr.pdf",
+      "sha1": "e9cd389229d500f7de4a810ceab1a38a3ad55bc6"
+    },
+    {
+      "path": "assets/samples/sample-certificate.pdf",
+      "sha1": "652509c96aefd6fb1379bd23b71a32c0624ad656"
+    },
+    {
+      "path": "assets/samples/sample_idcard.png",
+      "sha1": "b85b4919dbc210ae289e02712d20092016e39bb2"
+    },
+    {
+      "path": "assets/samples/sample-lecture.pdf",
+      "sha1": "b3aa4171a1e6c07e70c5ab70932db7edf369748a"
+    },
+    {
+      "path": "assets/samples/sample-lesson.pdf",
+      "sha1": "712724d23b220518352ba8477114e0ecbf528116"
+    },
+    {
+      "path": "assets/samples/sample-letter.pdf",
+      "sha1": "a7f731b6704e28636829dfe11df10117c78b36d9"
+    },
+    {
+      "path": "assets/samples/sample-manual.pdf",
+      "sha1": "0a92509d3fc6ff9f30e1fb78c9e212c8c121f542"
+    },
+    {
+      "path": "assets/samples/sample-statement.pdf",
+      "sha1": "78a33abfae9a9f4e46b2e96f33ae52c5a3dc7f81"
+    },
+    {
+      "path": "assets/samples/sample-syllabus.pdf",
+      "sha1": "5ca29495f8d6528f067c3ca2d013f51b079ff524"
+    },
+    {
+      "path": "assets/samples/sample-t2202.pdf",
+      "sha1": "eb15344bad229a5a12941711e2e7f5468e213d66"
+    },
+    {
+      "path": "assets/samples/sample-transcript.pdf",
+      "sha1": "539e1c4d2ae976f05534ab53596b578efc3358ff"
+    },
+    {
+      "path": "assets/samples/sample-workshop-outline.pdf",
+      "sha1": "cbdec5a436a05291c37fb0d8c7e04d8b35063865"
+    }
+  ]
+}

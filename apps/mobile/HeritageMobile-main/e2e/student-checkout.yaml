@@ -1,0 +1,57 @@
+# Catalogue -> mock checkout -> enrolment -> resume learning
+appId: org.reactjs.native.example.HeritageMobile
+---
+- runFlow: login.yaml
+- tapOn:
+    id: "tab-courses"
+- tapOn:
+    id: "courses-catalogue"
+- extendedWaitUntil:
+    visible:
+      id: "catalogue-screen"
+    timeout: 15000
+- scrollUntilVisible:
+    element:
+      id: "programme-prg_pharmacy"
+    direction: DOWN
+    timeout: 15000
+- tapOn:
+    id: "programme-prg_pharmacy"
+- extendedWaitUntil:
+    visible:
+      id: "programme-details"
+    timeout: 15000
+- tapOn:
+    id: "programme-bookmark"
+- scrollUntilVisible:
+    element:
+      id: "programme-start"
+    direction: DOWN
+    timeout: 15000
+- tapOn:
+    id: "programme-start"
+- extendedWaitUntil:
+    visible:
+      id: "checkout-screen"
+    timeout: 15000
+- scrollUntilVisible:
+    element:
+      id: "checkout-continue"
+    direction: DOWN
+    timeout: 15000
+- tapOn:
+    id: "checkout-continue"
+- extendedWaitUntil:
+    visible:
+      id: "outline-screen"
+    timeout: 20000
+- assertVisible:
+    text: "Pharmacy Assistant"
+- tapOn:
+    id: "outline-continue"
+- extendedWaitUntil:
+    visible:
+      id: "reading-screen"
+    timeout: 15000
+- assertVisible:
+    id: "activity-wait"

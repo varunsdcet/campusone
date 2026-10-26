@@ -1,0 +1,51 @@
+# Returns to the login screen from any signed-in state (pops pushed screens first).
+appId: org.reactjs.native.example.HeritageMobile
+---
+- repeat:
+    while:
+      notVisible:
+        id: "tab-bar"
+    times: 4
+    commands:
+      - tapOn:
+          id: "header-back"
+          optional: true
+      - tapOn:
+          id: "ask-back"
+          optional: true
+      - tapOn:
+          id: "coach-hide"
+          optional: true
+- tapOn:
+    id: "tab-profile"
+    optional: true
+- tapOn:
+    id: "tab-more"
+    optional: true
+- waitForAnimationToEnd
+- scrollUntilVisible:
+    element:
+      id: "profile-logout"
+    direction: DOWN
+    timeout: 25000
+    speed: 60
+    optional: true
+- scrollUntilVisible:
+    element:
+      id: "more-logout"
+    direction: DOWN
+    timeout: 25000
+    speed: 60
+    optional: true
+- tapOn:
+    id: "profile-logout"
+    optional: true
+- tapOn:
+    id: "more-logout"
+    optional: true
+- tapOn:
+    id: "logout-sheet-confirm"
+- extendedWaitUntil:
+    visible:
+      id: "login-screen"
+    timeout: 15000

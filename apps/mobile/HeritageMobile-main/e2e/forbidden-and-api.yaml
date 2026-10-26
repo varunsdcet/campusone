@@ -1,0 +1,71 @@
+# Role switch, forbidden navigation (capability off), invalid login, API-not-configured is covered by unit tests
+appId: org.reactjs.native.example.HeritageMobile
+---
+- runFlow: instructor-login.yaml
+- tapOn:
+    id: "tab-more"
+- tapOn:
+    id: "more-extended-toggle"
+- scrollUntilVisible:
+    element:
+      id: "more-faculties"
+    direction: DOWN
+    timeout: 15000
+- tapOn:
+    id: "more-faculties"
+- extendedWaitUntil:
+    visible:
+      id: "forbidden-screen"
+    timeout: 15000
+- tapOn:
+    id: "forbidden-back"
+- scrollUntilVisible:
+    element:
+      id: "more-extended-toggle"
+    direction: UP
+    timeout: 15000
+- tapOn:
+    id: "more-extended-toggle"
+- scrollUntilVisible:
+    element:
+      id: "more-programTypes"
+    direction: DOWN
+    timeout: 15000
+- tapOn:
+    id: "more-programTypes"
+- extendedWaitUntil:
+    visible:
+      id: "program-types"
+    timeout: 15000
+- tapOn:
+    id: "pt-create"
+- tapOn:
+    id: "pt-name"
+- inputText: "Micro-credential"
+- tapOn:
+    id: "pt-abbr"
+- inputText: "MC"
+- tapOn:
+    text: "Heritage Community College Registry"
+- tapOn:
+    id: "pt-save"
+- scrollUntilVisible:
+    element:
+      text: "Micro-credential"
+    direction: DOWN
+    timeout: 20000
+- assertVisible:
+    text: "Micro-credential"
+- scrollUntilVisible:
+    element:
+      id: "pt-delete-pt_dip"
+    direction: DOWN
+    timeout: 15000
+- tapOn:
+    id: "pt-delete-pt_dip"
+- tapOn:
+    id: "pt-delete-sheet-confirm"
+- assertVisible:
+    text: "Deletion blocked"
+- tapOn:
+    id: "pt-blocked-confirm"

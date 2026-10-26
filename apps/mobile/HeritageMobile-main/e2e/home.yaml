@@ -1,0 +1,33 @@
+# Recover to the tab bar from any pushed screen / bottom sheet / keyboard / native share sheet.
+appId: org.reactjs.native.example.HeritageMobile
+---
+- swipe:
+    direction: DOWN
+    duration: 300
+- repeat:
+    while:
+      notVisible:
+        id: "tab-bar"
+    times: 8
+    commands:
+      - tapOn:
+          id: ".*-close"
+          optional: true
+      - tapOn:
+          id: "header-back"
+          optional: true
+      - tapOn:
+          id: "ask-back"
+          optional: true
+      - tapOn:
+          id: "coach-hide"
+          optional: true
+      - tapOn:
+          id: "lecture-fullscreen-close"
+          optional: true
+      - tapOn:
+          text: "Cancel"
+          optional: true
+      - tapOn:
+          text: "Discard"
+          optional: true

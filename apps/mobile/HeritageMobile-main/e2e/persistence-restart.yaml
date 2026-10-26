@@ -1,0 +1,89 @@
+# Notification read state, leave request and personal-details request survive an app restart
+appId: org.reactjs.native.example.HeritageMobile
+---
+- runFlow: login.yaml
+- tapOn:
+    id: "home-notifications"
+- extendedWaitUntil:
+    visible:
+      id: "notifications-screen"
+    timeout: 15000
+- scrollUntilVisible:
+    element:
+      id: "notif-read-n_s_2"
+    direction: DOWN
+    timeout: 15000
+    centerElement: true
+- tapOn:
+    id: "notif-read-n_s_2"
+- extendedWaitUntil:
+    notVisible:
+      id: "notif-read-n_s_2"
+    timeout: 10000
+- tapOn:
+    id: "header-back"
+- tapOn:
+    id: "tab-profile"
+- scrollUntilVisible:
+    element:
+      id: "profile-leave"
+    direction: DOWN
+    timeout: 15000
+- tapOn:
+    id: "profile-leave"
+- extendedWaitUntil:
+    visible:
+      id: "leave-screen"
+    timeout: 15000
+- tapOn:
+    id: "leave-reason"
+- inputText: "Family travel for a scheduled procedure (demo)"
+- tapOn:
+    text: "Quick duration presets"
+- tapOn:
+    id: "leave-preset-1w"
+- tapOn:
+    id: "leave-review"
+- tapOn:
+    id: "leave-submit"
+- extendedWaitUntil:
+    visible:
+      id: "request-details"
+    timeout: 15000
+- assertVisible:
+    text: "pending"
+- stopApp
+- launchApp
+- extendedWaitUntil:
+    visible:
+      id: "student-home"
+    timeout: 30000
+- tapOn:
+    id: "home-notifications"
+- extendedWaitUntil:
+    visible:
+      id: "notifications-screen"
+    timeout: 15000
+- assertNotVisible:
+    id: "notif-read-n_s_2"
+- tapOn:
+    id: "header-back"
+- tapOn:
+    id: "tab-profile"
+- scrollUntilVisible:
+    element:
+      id: "profile-leave"
+    direction: DOWN
+    timeout: 15000
+- tapOn:
+    id: "profile-leave"
+- extendedWaitUntil:
+    visible:
+      id: "leave-screen"
+    timeout: 15000
+- scrollUntilVisible:
+    element:
+      text: "Family travel for a scheduled procedure (demo)"
+    direction: DOWN
+    timeout: 20000
+    centerElement: true

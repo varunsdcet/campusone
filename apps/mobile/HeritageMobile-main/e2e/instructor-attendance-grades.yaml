@@ -1,0 +1,75 @@
+# Instructor attendance draft -> submit; grades enter -> submit -> release
+appId: org.reactjs.native.example.HeritageMobile
+---
+- runFlow: instructor-login.yaml
+- tapOn:
+    id: "tab-courses"
+- extendedWaitUntil:
+    visible:
+      id: "instructor-my-courses"
+    timeout: 15000
+- tapOn:
+    id: "isection-sec_acsw500"
+- extendedWaitUntil:
+    visible:
+      id: "course-workspace"
+    timeout: 15000
+- tapOn:
+    id: "ws-tab-attendance"
+- tapOn:
+    id: "att-mark"
+- extendedWaitUntil:
+    visible:
+      id: "mark-attendance"
+    timeout: 15000
+- tapOn:
+    id: "mark-all-present"
+- scrollUntilVisible:
+    element:
+      id: "mark-u_student_marcus-late"
+    direction: DOWN
+    timeout: 20000
+    centerElement: true
+- tapOn:
+    id: "mark-u_student_marcus-late"
+- scrollUntilVisible:
+    element:
+      id: "mark-save-draft"
+    direction: DOWN
+    timeout: 20000
+    optional: true
+- tapOn:
+    id: "mark-save-draft"
+- assertVisible:
+    text: "Draft saved (not submitted)"
+- tapOn:
+    id: "att-mark"
+- extendedWaitUntil:
+    visible:
+      id: "mark-attendance"
+    timeout: 15000
+- tapOn:
+    id: "mark-submit"
+- tapOn:
+    id: "mark-review-sheet-confirm"
+- extendedWaitUntil:
+    visible:
+      text: "Attendance submitted · student records updated"
+    timeout: 15000
+- tapOn:
+    id: "ws-tab-grades"
+- tapOn:
+    id: "grades-enter"
+- extendedWaitUntil:
+    visible:
+      id: "grade-entry"
+    timeout: 15000
+- waitForAnimationToEnd
+- scrollUntilVisible:
+    element:
+      id: "ge-u_student_marcus-gi_acsw_q1"
+    direction: DOWN
+    timeout: 20000
+    centerElement: true
+- assertVisible:
+    id: "ge-u_student_marcus-gi_acsw_q1"

@@ -1,0 +1,10 @@
+e2e run Thu  8 Oct 2026 21:45:06 PDT on 384B0841-A9EA-4273-9388-FAB511EF8B3B
+PASS  login
+PASS  instructor-login
+PASS  student-learning (re-run ×2 after flow hardening + dev-jump reset; see docs/qa/e2e-student-learning.log)
+PASS  student-checkout
+PASS  student-assignment (re-run after fixing the hint-text assertion; see docs/qa/e2e-student-assignment.log)
+PASS  instructor-attendance-grades
+PASS  workshop-approval
+PASS  persistence-restart
+PASS  forbidden-and-api

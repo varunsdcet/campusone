@@ -1,0 +1,207 @@
+# Student login -> course -> material -> quiz/matching -> saved progress (uses the dev gallery jump to skip the 85s pacing timer)
+appId: org.reactjs.native.example.HeritageMobile
+---
+- runFlow: login.yaml
+- tapOn:
+    id: "tab-profile"
+- scrollUntilVisible:
+    element:
+      id: "profile-devgallery"
+    direction: DOWN
+    timeout: 15000
+- tapOn:
+    id: "profile-devgallery"
+- scrollUntilVisible:
+    element:
+      id: "dev-learn-ch1-assess"
+    direction: DOWN
+    timeout: 15000
+- tapOn:
+    id: "dev-learn-ch1-assess"
+- extendedWaitUntil:
+    notVisible:
+      id: "toast-success"
+    timeout: 8000
+- tapOn:
+    id: "header-back"
+- tapOn:
+    id: "tab-home"
+- tapOn:
+    id: "home-continue"
+- extendedWaitUntil:
+    visible:
+      id: "outline-screen"
+    timeout: 15000
+- assertVisible:
+    text: "5/70 activities completed"
+- tapOn:
+    id: "outline-continue"
+- extendedWaitUntil:
+    visible:
+      id: "assessment-screen"
+    timeout: 15000
+- waitForAnimationToEnd
+- extendedWaitUntil:
+    visible:
+      text: "1 / 6"
+    timeout: 10000
+- waitForAnimationToEnd
+- retry:
+    maxRetries: 3
+    commands:
+      - scrollUntilVisible:
+          element:
+            id: "quiz-option-1"
+          direction: DOWN
+          timeout: 10000
+          centerElement: true
+      - tapOn:
+          id: "quiz-option-1"
+      - extendedWaitUntil:
+          visible:
+            text: "1/6 answered"
+          timeout: 4000
+- tapOn:
+    id: "quiz-next"
+- extendedWaitUntil:
+    visible:
+      text: "2 / 6"
+    timeout: 10000
+- waitForAnimationToEnd
+- retry:
+    maxRetries: 3
+    commands:
+      - scrollUntilVisible:
+          element:
+            id: "quiz-option-0"
+          direction: DOWN
+          timeout: 10000
+          centerElement: true
+      - tapOn:
+          id: "quiz-option-0"
+      - extendedWaitUntil:
+          visible:
+            text: "2/6 answered"
+          timeout: 4000
+- tapOn:
+    id: "quiz-next"
+- extendedWaitUntil:
+    visible:
+      text: "3 / 6"
+    timeout: 10000
+- waitForAnimationToEnd
+- retry:
+    maxRetries: 3
+    commands:
+      - scrollUntilVisible:
+          element:
+            id: "quiz-option-1"
+          direction: DOWN
+          timeout: 10000
+          centerElement: true
+      - tapOn:
+          id: "quiz-option-1"
+      - extendedWaitUntil:
+          visible:
+            text: "3/6 answered"
+          timeout: 4000
+- tapOn:
+    id: "quiz-next"
+- extendedWaitUntil:
+    visible:
+      text: "4 / 6"
+    timeout: 10000
+- waitForAnimationToEnd
+- retry:
+    maxRetries: 3
+    commands:
+      - scrollUntilVisible:
+          element:
+            id: "quiz-option-1"
+          direction: DOWN
+          timeout: 10000
+          centerElement: true
+      - tapOn:
+          id: "quiz-option-1"
+      - extendedWaitUntil:
+          visible:
+            text: "4/6 answered"
+          timeout: 4000
+- tapOn:
+    id: "quiz-next"
+- extendedWaitUntil:
+    visible:
+      text: "5 / 6"
+    timeout: 10000
+- waitForAnimationToEnd
+- retry:
+    maxRetries: 3
+    commands:
+      - scrollUntilVisible:
+          element:
+            id: "quiz-option-2"
+          direction: DOWN
+          timeout: 10000
+          centerElement: true
+      - tapOn:
+          id: "quiz-option-2"
+      - extendedWaitUntil:
+          visible:
+            text: "5/6 answered"
+          timeout: 4000
+- tapOn:
+    id: "quiz-next"
+- extendedWaitUntil:
+    visible:
+      text: "6 / 6"
+    timeout: 10000
+- waitForAnimationToEnd
+- retry:
+    maxRetries: 3
+    commands:
+      - scrollUntilVisible:
+          element:
+            id: "quiz-option-0"
+          direction: DOWN
+          timeout: 10000
+          centerElement: true
+      - tapOn:
+          id: "quiz-option-0"
+      - extendedWaitUntil:
+          visible:
+            text: "6/6 answered"
+          timeout: 4000
+- scrollUntilVisible:
+    element:
+      id: "quiz-submit"
+    direction: DOWN
+    timeout: 10000
+    centerElement: true
+- tapOn:
+    id: "quiz-submit"
+- assertVisible:
+    text: "Assessment passed"
+- tapOn:
+    id: "header-back"
+- extendedWaitUntil:
+    visible:
+      id: "outline-screen"
+    timeout: 15000
+- tapOn:
+    id: "outline-activity-prg_office_admin_ch1_a4"
+- extendedWaitUntil:
+    visible:
+      id: "quiz-screen"
+    timeout: 15000
+- assertVisible:
+    id: "activity-next"
+- tapOn:
+    id: "header-back"
+- tapOn:
+    id: "outline-activity-prg_office_admin_ch1_a5"
+- extendedWaitUntil:
+    visible:
+      id: "matching-screen"
+    timeout: 15000
+- assertVisible:
+    text: "Drill passed · 100%"
